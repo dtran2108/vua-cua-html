@@ -283,3 +283,21 @@ a:hover {
 .carousel-item {
   max-height: 600px!important;
 }
+
+.register-btn {
+  background-color: #bd1e2d;
+  padding: 4px 16px;
+  color: white;
+  border: 0.5px solid #bd1e2d;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  position: relative;
+  right: 24px;
+}
+
+.red-divider {
+  border-right: 2px  solid #bd1e2d;
+}
