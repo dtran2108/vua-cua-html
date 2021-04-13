@@ -1,3 +1,4 @@
+/* start: import */
 @font-face {
   font-family: "Aachenb";
   src: url("static/fonts/aachenb.ttf");
@@ -7,13 +8,19 @@
   font-family: "Poppins Medium";
   src: url("static/fonts/poppins-medium.ttf");
 }
+/* end: import */
 
+/* start: text */
 .text-primary {
   color: #bd1e2d!important;
 }
 
 .small-text {
   font-size: 12px;
+}
+
+.description-text {
+  font-size: 16px;
 }
 
 .black-text {
@@ -24,6 +31,21 @@
   color: white;
 }
 
+.upper-text {
+  text-transform: uppercase;
+}
+
+.aachenb {
+  font-family: "Aachenb";
+}
+
+
+.poppins {
+  font-family: "Poppins Medium";
+}
+/* end: text */
+
+/* start: Background color */
 .facebook-bg-color {
   background-color: #4167b2
 }
@@ -35,17 +57,24 @@
 .common-bg-color {
   background-color: #ffad00
 }
+/* end: Background color */
+
+.learn-more-btn {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  width: fit-content;
+  box-shadow: none;
+  padding: 3px 6px;
+  background-color: transparent;
+  border-color: #90c0fa;
+  color: #90c0fa;
+}
 
 .no-margin {
   margin: 0
-}
-
-.aachenb {
-  font-family: "Aachenb";
-}
-
-.poppins {
-  font-family: "Poppins Medium";
 }
 
 .cus-input {
@@ -154,4 +183,38 @@
   margin: 0px;
   font-weight: bold;
   width: fit-content;
+}
+
+.chain-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: 2px 2px 4px rgba(190, 190, 190);
+  padding: 10px 20px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  margin-bottom: 16px;
+  width: 270px;
+  position: relative;
+}
+
+.img-chain {
+  position: absolute;
+  right: 150px;
+  bottom: 40px;
+}
+
+.chain-name {
+  position: relative;
+  left: 35px;
+  font-size: 2em;
+}
+
+.border-bot {
+  border-bottom: 2px solid #ea4235;
 }
