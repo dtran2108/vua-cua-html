@@ -8,6 +8,11 @@
   font-family: "Poppins Medium";
   src: url("static/fonts/poppins-medium.ttf");
 }
+
+@font-face {
+  font-family: "Cardillac";
+  src: url("static/fonts/cardillac-medium.ttf")
+}
 /* end: import */
 
 /* start: text */
@@ -41,6 +46,10 @@
 
 .poppins {
   font-family: "Poppins Medium";
+}
+
+.cardillac {
+  font-family: "Cardillac";
 }
 /* end: text */
 
@@ -247,4 +256,22 @@ a:hover {
   background-color: #bd1e2d;
   color: white;
   padding: 3px 12px;
+}
+
+.carousel-caption {
+  top: 1.5rem;
+}
+
+.carousel-description {
+  position: absolute;
+  left: 0;
+  top: 10rem;
+}
+
+.carousel {
+  max-height: 600px!important;
+}
+
+.carousel-item {
+  max-height: 600px!important;
 }
