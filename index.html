@@ -86,7 +86,7 @@
     </div>
     <!-- End: Phone + logo + search box -->
 
-    <!-- Start: Search box + menu -->
+    <!-- Start: Search box + menu + area modal -->
     <div class="container-lg mt-4">
       <div class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="d-flex">
@@ -96,7 +96,48 @@
             height="40px"
             class="me-2"
           ></iframe>
-          <input class="cus-input" placeholder="Chọn khu vực giao hàng" />
+          <button
+            class="cus-input"
+            data-bs-toggle="modal"
+            data-bs-target="#areaModal"
+            type="button"
+          >
+            Chọn khu vực giao hàng
+          </button>
+          <!-- start: areaModal -->
+          <div
+            class="modal fade"
+            id="areaModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <p
+                    class="modal-title poppins text-primary"
+                    id="exampleModalLabel"
+                  >
+                    Quý khách vui lòng chọn khu vực để Vua Cua có thể gợi ý thực
+                    đơn phù hợp nhất
+                  </p>
+                </div>
+                <div
+                  class="modal-body primary-bg-color text-center white-text poppins"
+                >
+                  <h6>Chọn tỉnh/thành phố</h6>
+                </div>
+                <div class="modal-body bottom-divider">TP Hồ Chí Minh</div>
+                <div class="modal-body bottom-divider">TP Cần Thơ</div>
+                <div class="modal-body bottom-divider">TP Long An</div>
+                <div class="modal-body bottom-divider">TP Vũng Tàu</div>
+                <div class="modal-body bottom-divider">Bình Dương</div>
+                <div class="modal-body bottom-divider">Đồng Nai</div>
+              </div>
+            </div>
+          </div>
+          <!-- end: areaModal -->
         </div>
         <a class="navigate-item">Thực đơn</a>
         <a class="navigate-item">Đặt bàn</a>
@@ -578,19 +619,14 @@
 
     <!-- Start: Restaurant carousel -->
     <!-- Start: Restaurant carousel caption mobile -->
-    <center class="cardillac mobile-carousel-caption d-none-desktop black-bg-color white-text py-2">
+    <center
+      class="cardillac mobile-carousel-caption d-none-desktop black-bg-color white-text py-2"
+    >
       <h5 class="poppins">Cùng tham quan</h5>
-      <h1 class="aachenb text-uppercase">
-        không gian nhà hàng vua cua
-      </h1>
+      <h1 class="aachenb text-uppercase">không gian nhà hàng vua cua</h1>
     </center>
     <!-- End: Restaurant carousel caption mobile -->
-    <div
-      id="restaurant-carousel"
-      class="carousel slide"
-    
-      data-ride="carousel"
-    >
+    <div id="restaurant-carousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li
           data-target="#restaurantCarouselIndicators"
@@ -607,7 +643,9 @@
             src="./static/png/black-bg.jpeg"
             alt="First slide"
           />
-          <div class="carousel-caption d-md-flex pt-0 flex-column justify-content-center">
+          <div
+            class="carousel-caption d-md-flex pt-0 flex-column justify-content-center"
+          >
             <div class="cardillac mb-5 d-md-block d-none">
               <h5 class="poppins">Cùng tham quan</h5>
               <h1 class="aachenb text-uppercase">
@@ -682,7 +720,10 @@
     </div>
     <!-- End: Restaurant carousel -->
 
-    <hr class="no-margin" style="border-top: 10px solid #bd1e2d; background: none" />
+    <hr
+      class="no-margin"
+      style="border-top: 10px solid #bd1e2d; background: none"
+    />
 
     <!-- Start: Dang ky khuyen mai -->
     <div class="secondary-bg-color py-5">
