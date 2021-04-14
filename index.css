@@ -58,6 +58,10 @@
 /* end: text */
 
 /* start: Background color */
+.black-bg-color {
+  background-color: black;
+}
+
 .facebook-bg-color {
   background-color: #4167b2;
 }
@@ -278,6 +282,14 @@ a:hover {
   position: absolute;
   left: 0;
   top: 10rem;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .carousel {

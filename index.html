@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./mobile.css" />
     <title>Vua Cua</title>
   </head>
   <body>
@@ -410,12 +411,12 @@
             src="https://i.pinimg.com/originals/1c/7f/36/1c7f365544558fd49aaf3958d5c451c3.jpg"
             alt="First slide"
           />
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption">
             <h1 class="cardillac">
               <span class="aachenb no-margin upper-text">vua cua</span> và những
               vị khách đặc biệt!
             </h1>
-            <div class="carousel-description text-start">
+            <div class="carousel-description text-start d-none d-md-block">
               <h1 class="cardillac">
                 Gia đình<br />ca sĩ Khởi My & Kevin Khánh
               </h1>
@@ -575,14 +576,122 @@
     </div>
     <!-- End: Bi quyet tao nen mot mon an ngon -->
 
+    <!-- Start: Restaurant carousel -->
+    <!-- Start: Restaurant carousel caption mobile -->
+    <center class="cardillac mobile-carousel-caption d-none-desktop black-bg-color white-text py-2">
+      <h5 class="poppins">Cùng tham quan</h5>
+      <h1 class="aachenb text-uppercase">
+        không gian nhà hàng vua cua
+      </h1>
+    </center>
+    <!-- End: Restaurant carousel caption mobile -->
+    <div
+      id="restaurant-carousel"
+      class="carousel slide"
+    
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#restaurantCarouselIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#restaurantCarouselIndicators" data-slide-to="1"></li>
+        <li data-target="#restaurantCarouselIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            class="d-block w-100"
+            src="./static/png/black-bg.jpeg"
+            alt="First slide"
+          />
+          <div class="carousel-caption d-md-flex pt-0 flex-column justify-content-center">
+            <div class="cardillac mb-5 d-md-block d-none">
+              <h5 class="poppins">Cùng tham quan</h5>
+              <h1 class="aachenb text-uppercase">
+                không gian nhà hàng vua cua
+              </h1>
+            </div>
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <div class="card bg-transparent text-white">
+                  <img
+                    src="./static/png/restaurant-space.png"
+                    class="card-img"
+                    alt="restaurant space"
+                  />
+                  <div
+                    class="card-img-overlay dark-overlay d-flex align-items-end"
+                  >
+                    <h5 class="card-title">Chi nhánh Vũ Huy Tấn</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center d-md-block d-none">
+                <div class="card bg-transparent text-white">
+                  <img
+                    src="./static/png/restaurant-space.png"
+                    class="card-img"
+                    alt="restaurant space"
+                  />
+                  <div
+                    class="card-img-overlay dark-overlay d-flex align-items-end"
+                  >
+                    <h5 class="card-title">Chi nhánh Võ Văn Kiệt</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 text-center d-md-block d-none">
+                <div class="card bg-transparent text-white">
+                  <img
+                    src="./static/png/restaurant-space.png"
+                    class="card-img"
+                    alt="restaurant space"
+                  />
+                  <div
+                    class="card-img-overlay dark-overlay d-flex align-items-end"
+                  >
+                    <h5 class="card-title">Chi nhánh Bàu Cát</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only"></span>
+      </a>
+    </div>
+    <!-- End: Restaurant carousel -->
+
+    <hr class="no-margin" style="border-top: 10px solid #bd1e2d; background: none" />
+
     <!-- Start: Dang ky khuyen mai -->
     <div class="secondary-bg-color py-5">
       <!-- <div class="container-lg"> -->
-      <div class="row">
+      <div class="row w-100">
         <center class="col-md-4">
           <img src="./static/png/full-logo.png" alt="full logo" />
         </center>
-        <div class="col-md-4 red-divider pe-5">
+        <div class="col-md-4 red-divider pe-md-5 text-center">
           <h5 class="poppins text-primary no-margin text-center pb-3">
             Để lại địa chỉ email<br />để đăng ký nhận khuyến mãi nhé!
           </h5>
@@ -638,23 +747,35 @@
           </div>
           <div class="col-md-3 white-text">
             <p class="poppins small-text no-margin">Về Vua Cua</p>
-            <p class="poppins small-text no-margin">Chính sách và quy định chung</p>
+            <p class="poppins small-text no-margin">
+              Chính sách và quy định chung
+            </p>
             <p class="poppins small-text no-margin">Hướng dẫn đặt hàng</p>
             <p class="poppins small-text no-margin">Giao hàng - Thanh toán</p>
-            <p class="poppins small-text no-margin">Khiếu nại & giải quyết khiếu nại</p>
+            <p class="poppins small-text no-margin">
+              Khiếu nại & giải quyết khiếu nại
+            </p>
             <p class="poppins small-text no-margin">Bảo mật</p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 my-3 mx-0">
             <img src="./static/png/bocongthuong.png" alt="bo cong thuong" />
           </div>
           <div class="col-md-3 white-text">
             <div class="d-flex justify-content-start align-items-center mb-3">
-              <img src="./static/png/white-phone.png" alt="white phone" style="position: 'relative'; bottom: 8"/>
+              <img
+                src="./static/png/white-phone.png"
+                alt="white phone"
+                style="position: 'relative'; bottom: 8"
+              />
               <h3 class="aachenb white-text no-margin">1900 6333 87</h3>
             </div>
             <p class="poppins small-text no-margin">Giờ hoạt động</p>
-            <p class="poppins small-text no-margin">Nhà hàng: 10:00 - 23:00 (T2 - Chủ Nhật)</p>
-            <p class="poppins small-text no-margin">Giao hàng tận nơi: 10:00 - 21:30 (T2 - Chủ Nhật)</p>
+            <p class="poppins small-text no-margin">
+              Nhà hàng: 10:00 - 23:00 (T2 - Chủ Nhật)
+            </p>
+            <p class="poppins small-text no-margin">
+              Giao hàng tận nơi: 10:00 - 21:30 (T2 - Chủ Nhật)
+            </p>
           </div>
         </div>
       </div>
