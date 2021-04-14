@@ -15,6 +15,17 @@
 }
 /* end: import */
 
+/* start: media */
+@media only screen and (min-width: 768px) {
+  .d-none-desktop {
+    display: none!important;
+  }
+  .desktop-width {
+    min-width: 1000px
+  }
+}
+/* end: media */
+
 /* start: text */
 .text-primary {
   color: #bd1e2d !important;
@@ -59,27 +70,35 @@
 
 /* start: Background color */
 .black-bg-color {
-  background-color: black;
+  background-color: black!important;
 }
 
 .facebook-bg-color {
-  background-color: #4167b2;
+  background-color: #4167b2!important;
 }
 
 .google-bg-color {
-  background-color: #ea4235;
+  background-color: #ea4235!important;
 }
 
 .common-bg-color {
-  background-color: #ffad00;
+  background-color: #ffad00!important;
+}
+
+.gray-bg-color {
+  background-color: #f8f8f8!important;
 }
 
 .primary-bg-color {
-  background-color: #bd1e2d;
+  background-color: #bd1e2d!important;
+}
+
+.white-bg-color {
+  background-color: white!important;
 }
 
 .secondary-bg-color {
-  background-color: #f0ede6
+  background-color: #f0ede6!important;
 }
 /* end: Background color */
 

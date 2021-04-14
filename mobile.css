@@ -9,9 +9,3 @@
     display: none!important;
   }
 }
-
-@media only screen and (min-width: 768px) {
-  .d-none-desktop {
-    display: none!important;
-  }
-}
