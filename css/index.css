@@ -6,6 +6,11 @@
   --blue: #59a3f6;
   --gray: #a3a3a3;
 }
+/* variables */
+
+@media screen and (max-width: 960px) {
+  @import url('./mobile.css');
+}
 
 /* start: import */
 @font-face {
@@ -47,6 +52,10 @@
 
 .text-justify {
   text-align: justify;
+}
+
+.extra-small-text {
+  font-size: 8px;
 }
 
 .small-text {

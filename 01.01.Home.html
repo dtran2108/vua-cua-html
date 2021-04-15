@@ -20,7 +20,7 @@
     <!-- Start: Phone + logo + search box -->
     <div class="container-lg mt-3">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-4 d-none d-lg-block">
           <div class="row">
             <div class="col-2">
               <img src="./images/png/phone.png" alt="phone icon" />
@@ -32,10 +32,31 @@
             </div>
           </div>
         </div>
-        <div class="col-sm text-center">
+        <!-- start: mobile hamburger -->
+        <div class="col-4 d-lg-none d-block">
+          <section class="p-menu1">
+            <nav id="navbar" class="navigation" role="navigation">
+              <input id="toggle1" type="checkbox" />
+              <label class="hamburger1" for="toggle1">
+                <div class="top"></div>
+                <div class="meat"></div>
+                <div class="bottom"></div>
+              </label>
+            </nav>
+          </section>
+        </div>
+        <!-- end: mobile hamburger -->
+        <div class="col-4 text-center">
           <img src="./images/png/logo.png" alt="simple logo" />
         </div>
-        <div class="col-sm text-end">
+        <!-- start: mobile cart -->
+        <div class="col-4 d-lg-none d-flex justify-content-end align-items-center">
+          <div class="container d-flex justify-content-end">
+            <i class="fas fa-cart-plus large-text"></i>
+          </div>
+        </div>
+        <!-- end: mobile cart -->
+        <div class="col-4 text-end d-none d-lg-block">
           <input class="cus-input" placeholder="Nhập tên món ăn bạn cần tìm kiếm..." />
           <div class="text-end d-flex justify-content-end mt-2">
             <div>
@@ -73,7 +94,7 @@
             </div>
             <!-- start: registerModal -->
             <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" style="display: flex!important; justify-content: center!important;;">
+              <div class="modal-dialog" style="display: flex !important; justify-content: center !important">
                 <div class="modal-content desktop-width">
                   <div class="modal-header gray-bg-color">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -233,12 +254,57 @@
     </div>
     <!-- End: Phone + logo + search box -->
 
+    <!-- start: mobile Search box + menu -->
+    <div class="d-block d-lg-none mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-2 d-flex justify-content-end align-items-center">
+            <div class="container">
+              <img src="./images/png/white-phone.png" alt="phone" />
+            </div>
+          </div>
+          <center class="col-6 d-flex flex-column justify-content-center align-items-center">
+            <h4 class="text-primary poppins no-margin">
+              <b><i>1900 6333 87</i></b>
+            </h4>
+            <p class="poppins-light extra-small-text no-margin">
+              <i class="fas fa-utensils"></i>&nbsp;Nhà hàng <b class="text-primary">10h-22h</b> T2 - Chủ Nhật
+            </p>
+            <p class="poppins-light extra-small-text no-margin">
+              <i class="fas fa-stopwatch"></i>&nbsp;Giao hàng <b class="text-primary">9h-20h30</b> T2 - Chủ Nhật
+            </p>
+          </center>
+          <div class="col-4">
+            <i class="fas fa-map-marker-alt medium-text mb-1 d-flex justify-content-center"></i>
+            <p class="poppins extra-small-text no-margin"><b>Chọn khu vực giao hàng để biết phí ship</b></p>
+          </div>
+        </div>
+        <div class="input-group mt-1">
+          <input
+            type="text"
+            placeholder="Tìm món ăn..."
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- end: mobile Search box + menu -->
+
     <!-- Start: Search box + menu + area modal -->
-    <div class="container-lg mt-4">
+    <div class="container-lg mt-4 d-none d-lg-block">
       <div class="d-flex flex-wrap justify-content-between align-items-center">
         <div class="d-flex">
           <iframe src="./images/svg/address.svg" width="35px" height="40px" class="me-2"></iframe>
-          <button class="cus-input" data-bs-toggle="modal" data-bs-target="#areaModal" type="button">Chọn khu vực giao hàng</button>
+          <button
+            class="cus-input d-flex justify-content-start align-items-center white-bg-color"
+            data-bs-toggle="modal"
+            data-bs-target="#areaModal"
+            type="button"
+          >
+            Chọn khu vực giao hàng
+          </button>
           <!-- start: areaModal -->
           <div class="modal fade" id="areaModal" tabindex="-1" aria-labelledby="areaLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -262,16 +328,16 @@
           </div>
           <!-- end: areaModal -->
         </div>
-        <a class="navigate-item" href="./product-detail/product-detail.html">Thực đơn</a>
-        <a class="navigate-item">Đặt bàn</a>
-        <a class="navigate-item">Khuyến mãi</a>
-        <a class="navigate-item">Chia sẻ bí quyết</a>
-        <a class="navigate-item">Tham quan nhà hàng</a>
+        <a class="navigate-item black-text" href="./product-detail/product-detail.html">Thực đơn</a>
+        <a class="navigate-item black-text">Đặt bàn</a>
+        <a class="navigate-item black-text">Khuyến mãi</a>
+        <a class="navigate-item black-text">Chia sẻ bí quyết</a>
+        <a class="navigate-item black-text">Tham quan nhà hàng</a>
       </div>
     </div>
     <!-- End: Search box + menu -->
 
-    <img src="./images/png/home-banner.png" class="mt-4" alt="vua cua banner" width="100%" height="auto" />
+    <img src="./images/png/home-banner.png" class="mt-2" alt="vua cua banner" width="100%" height="auto" />
 
     <!-- Start: He thong vua cua -->
     <div class="container-lg mt-5 pb-3 text-center border-bot">
