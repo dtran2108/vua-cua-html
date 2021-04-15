@@ -1,17 +1,17 @@
 /* start: import */
 @font-face {
   font-family: "Aachenb";
-  src: url("static/fonts/aachenb.ttf");
+  src: url("../fonts/aachenb.ttf");
 }
 
 @font-face {
   font-family: "Poppins Medium";
-  src: url("static/fonts/poppins-medium.ttf");
+  src: url("../fonts/poppins-medium.ttf");
 }
 
 @font-face {
   font-family: "Cardillac";
-  src: url("static/fonts/cardillac-medium.ttf")
+  src: url("../fonts/cardillac-medium.ttf")
 }
 /* end: import */
 
@@ -37,6 +37,10 @@
 
 .small-text {
   font-size: 12px;
+}
+
+.medium-text {
+  font-size: 16px;
 }
 
 .description-text {
@@ -122,6 +126,10 @@
 
 .bottom-divider {
   border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.bottom-red-divider {
+  border-bottom: 2px solid #bd1e2d;
 }
 
 .cus-input {

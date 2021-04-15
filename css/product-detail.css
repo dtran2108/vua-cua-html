@@ -1,0 +1,16 @@
+.order-btn{
+  border-radius: 16px!important;
+  -webkit-border-radius: 16px!important;
+  -moz-border-radius: 16px!important;
+  -ms-border-radius: 16px!important;
+  -o-border-radius: 16px!important;
+  border-color: #bd1e2d;
+  color: #bd1e2d;
+  width: 230px;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.order-btn:hover {
+  background-color: #bd1e2d;
+  border-color: #bd1e2d;
+}
