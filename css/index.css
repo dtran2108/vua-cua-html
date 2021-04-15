@@ -1,3 +1,11 @@
+/* variables */
+:root {
+  --primary-color: #bd1e2d;
+  --green: #018045;
+  --yellow: #da903b;
+  --blue: #59a3f6;
+}
+
 /* start: import */
 @font-face {
   font-family: "Aachenb";
@@ -28,7 +36,7 @@
 
 /* start: text */
 .text-primary {
-  color: #bd1e2d !important;
+  color: var(--primary-color) !important;
 }
 
 .text-justify {
@@ -43,12 +51,28 @@
   font-size: 16px;
 }
 
+.large-text {
+  font-size: 24px;
+}
+
 .description-text {
   font-size: 16px;
 }
 
 .black-text {
   color: black;
+}
+
+.green-text {
+  color: var(--green)
+}
+
+.yellow-text {
+  color: var(--yellow)
+}
+
+.blue-text {
+  color: var(--blue)
 }
 
 .white-text {
@@ -94,7 +118,7 @@
 }
 
 .primary-bg-color {
-  background-color: #bd1e2d!important;
+  background-color: var(--primary-color)!important;
 }
 
 .white-bg-color {
@@ -129,7 +153,7 @@
 }
 
 .bottom-red-divider {
-  border-bottom: 2px solid #bd1e2d;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .cus-input {
@@ -281,7 +305,7 @@ a {
 }
 
 a:hover {
-  color: #bd1e2d;
+  color: var(--primary-color);
 }
 
 .combo-wrap {
@@ -294,13 +318,13 @@ a:hover {
 }
 
 .chip {
-  border: 1px solid #bd1e2d;
+  border: 1px solid var(--primary-color);
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
-  background-color: #bd1e2d;
+  background-color: var(--primary-color);
   color: white;
   padding: 3px 12px;
 }
@@ -332,10 +356,10 @@ a:hover {
 }
 
 .register-btn {
-  background-color: #bd1e2d;
+  background-color: var(--primary-color);
   padding: 4px 16px;
   color: white;
-  border: 0.5px solid #bd1e2d;
+  border: 0.5px solid var(--primary-color);
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -346,5 +370,5 @@ a:hover {
 }
 
 .red-divider {
-  border-right: 2px  solid #bd1e2d;
+  border-right: 2px  solid var(--primary-color);
 }
