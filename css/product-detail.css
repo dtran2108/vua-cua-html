@@ -4,15 +4,15 @@
   -moz-border-radius: 16px!important;
   -ms-border-radius: 16px!important;
   -o-border-radius: 16px!important;
-  border-color: #bd1e2d;
-  color: #bd1e2d;
+  border-color: var(--primary-color);
+  color: var(--primary-color);
   width: 230px;
   box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .order-btn:hover {
-  background-color: #bd1e2d;
-  border-color: #bd1e2d;
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 .paper {
@@ -24,4 +24,16 @@
   -o-border-radius: 10px;
   box-shadow: 3px 3px 5px #d8d8d8;
   padding: 18px;
+}
+
+.add-to-cart-btn {
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  padding: 3px 32px;
+  background-color: var(--primary-color);
+  height: 100%;
 }

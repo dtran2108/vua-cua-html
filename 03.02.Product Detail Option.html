@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/solid.css" />
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/product-detail.css" />
+    <title>03.01.Product Detail</title>
+  </head>
+  <body>
+    <button class="icon-button" data-bs-toggle="modal" data-bs-target="#optionModal" type="button">
+      <i class="fas fa-plus-circle text-primary large-text"></i>
+    </button>
+
+    <!-- start: optionModal -->
+    <div class="modal fade" id="optionModal" tabindex="-1" aria-labelledby="optionModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered desktop-width">
+        <div class="modal-content" style="padding: 16px 48px">
+          <div class="modal-header">
+            <h3 class="modal-title poppins" id="optionModalLabel"><b>Lựa chọn đi kèm "Combo cua thịt nhỏ"</b></h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bottom-divider">
+            <h4 class="poppins">Chọn 1 xốt chế biến</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt me</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt Cà ri</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt Sa tế</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt Tiêu đen</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xào dừa</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt X.O (+55,000)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Xốt Trứng muối (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Xốt Bơ tỏi (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Xốt Cajun (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Xốt Bơ cay (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Cháy tỏi (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Xốt Ớt Vua Cua (+55,000)</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Xốt Tiêu xanh (+55,000)</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Rang muối Hong Kong (+55,000)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <h4 class="poppins">Chọn món ăn đi kèm</h4>
+            <div class="row">
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                    ><span class="poppins medium-text">Bông cải xanh xào tỏi</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Salad dầu giấm</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Cơm chiên trứng</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Mỳ ý bơ tỏi</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Miến xào</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Rau muống xào X.O</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Bắp Mỹ xốt Cajun</span>
+                  </li>
+                  <li class="d-flex align-items-center mb-2">
+                    <i class="fas fa-plus-circle me-4 large-text gray-text"></i><span class="poppins medium-text">Khoai tây chiên</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer flex-column align-items-start">
+            <ul>
+              <li class="d-flex align-items-center mb-2">
+                <i class="fas fa-plus-circle me-4 large-text gray-text"></i
+                ><span class="poppins medium-text">Bánh mì Vua Cua (+10,000)</span>
+              </li>
+            </ul>
+            <div class="row no-margin" style="width: 100%">
+              <div class="col-md-6" style="padding: 0">
+                <div class="input-group input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-lg"
+                    placeholder="&#xf303; Thêm ghi chú cho món này"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <button class="icon-button add-to-cart-btn" style="width: 100%; height: 100%">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="poppins-light white-text no-margin">Thêm vào giỏ</h5>
+                    <h4 class="poppins white-text no-margin"><b>399,000đ</b></h4>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: optionModal -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./jquery/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
