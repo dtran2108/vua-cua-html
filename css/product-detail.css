@@ -4,21 +4,12 @@
   }
 }
 
-.order-btn{
-  border-radius: 16px!important;
-  -webkit-border-radius: 16px!important;
-  -moz-border-radius: 16px!important;
-  -ms-border-radius: 16px!important;
-  -o-border-radius: 16px!important;
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  width: 230px;
-  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.3);
-}
+
 
 .order-btn:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
+  color: white!important;
 }
 
 .paper {

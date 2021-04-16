@@ -60,7 +60,147 @@
           <input class="cus-input" placeholder="Nhập tên món ăn bạn cần tìm kiếm..." />
           <div class="text-end d-flex justify-content-end mt-2">
             <div>
-              <img src="./images/png/cart.png" alt="cart" />
+              <button class="icon-button" data-bs-target="#bookingModal" type="button" data-bs-toggle="modal">
+                <img src="./images/png/cart.png" alt="cart" />
+              </button>
+              <!-- start: bookingModal -->
+              <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="display: flex !important; justify-content: center !important">
+                  <div class="modal-content desktop-width">
+                    <div class="modal-header gray-bg-color pt-5 px-5" style="border: none">
+                      <h4 class="poppins text-primary text-uppercase modal-title"><b>Nhập thông tin đặt hàng</b></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body gray-bg-color px-5 mb-0" style="border: none">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Tên"
+                              aria-label="Tên"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="fas fa-user large-text gray-text"></i>
+                            </span>
+                          </div>
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Chọn chi nhánh"
+                              aria-label="Chọn chi nhánh"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="fas fa-store large-text gray-text"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Số điện thoại"
+                              aria-label="Số điện thoại"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="fas fa-mobile-alt large-text gray-text"></i>
+                            </span>
+                          </div>
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Số lượng khách"
+                              aria-label="Số lượng khách"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="fas fa-user-plus large-text gray-text"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Email"
+                              aria-label="Email"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="fas fa-envelope large-text gray-text"></i>
+                            </span>
+                          </div>
+                          <div class="input-group mb-2 input-group-lg">
+                            <input
+                              type="text"
+                              class="form-control no-border-right"
+                              placeholder="Ngày đặt"
+                              aria-label="Ngày đặt"
+                              aria-describedby="basic-addon2"
+                            />
+                            <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                              <i class="far fa-calendar-alt large-text gray-text"></i>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row my-3">
+                        <div class="col-3">
+                          <div class="form-check" style="width: fit-content">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            <label class="form-check-label text-primary poppins-light medium-text" for="flexCheckDefault">
+                              Đặt phòng VIP + 300k
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-4">
+                          <div class="form-check" style="width: fit-content">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                            <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn gọi món </label>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-check" style="width: fit-content">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                            <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn buffet </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <p class="poppins small-text no-margin text-start">
+                          <i>Nếu quý khách có bất kỳ câu hỏi hoặc yêu cầu liên quan đến việc đặt chỗ:</i>
+                        </p>
+                        <div class="input-group">
+                          <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer gray-bg-color justify-content-between align-items-center px-5 pb-3" style="border: none">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/png/captcha.png" alt="captcha" width="100%" />
+                        </div>
+                        <div class="col-md-6 d-flex align-items-center justify-content-end">
+                          <button type="button" class="btn text-uppercase order-btn primary-bg-color white-text" style="width: 300px; height: 50px">
+                            <b>Đặt ngay</b>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end: bookingModal -->
             </div>
             <div class="d-flex align-items-center ms-2">
               <h6 class="aachenb text-primary no-margin">9,999,000</h6>
