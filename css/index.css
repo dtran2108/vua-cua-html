@@ -132,6 +132,10 @@
   background-color: #ea4235!important;
 }
 
+.blue-bg-color {
+  background-color: var(--blue);
+}
+
 .common-bg-color {
   background-color: #ffad00!important;
 }

@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+  .mb-down-md-2 {
+    margin-bottom: 12px!important;
+  }
+}
+
 .order-btn{
   border-radius: 16px!important;
   -webkit-border-radius: 16px!important;
@@ -36,4 +42,13 @@
   padding: 3px 32px;
   background-color: var(--primary-color);
   height: 100%;
+}
+
+.round-background {
+  padding: 2px 7px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
