@@ -479,3 +479,15 @@ a:hover {
   visibility: visible;
   opacity: 1;
 }
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
