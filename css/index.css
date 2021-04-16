@@ -365,11 +365,11 @@ ul {
 
 a {
   text-decoration: none;
-  color: black;
+  color: black!important;
 }
 
 a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color)!important;
 }
 
 .combo-wrap {
