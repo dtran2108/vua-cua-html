@@ -159,10 +159,55 @@
                 type="button"
                 class="btn btn-danger primary-bg-color poppins medium-text text-uppercase white-text poppins py-3"
                 style="width: 100%"
+                data-bs-toggle="modal"
+                data-bs-target="#couponModal"
               >
                 <h6 class="no-margin"><b>Giảm giá</b></h6>
                 <h1 class="no-margin" style="color: #ffd849"><b>10%</b></h1>
               </button>
+              <!-- start: couponModal -->
+              <div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="couponModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="display: flex !important; justify-content: center !important">
+                  <div class="modal-content desktop-width">
+                    <div class="modal-header" style="border: none">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex flex-column align-items-center justify-content-center">
+                      <h4 class="text-primary text-uppercase"><b>Khuyến mãi combo 3 cua thịt nhỏ y4 (sống) và ưu đãi</b></h4>
+                      <p class="gray-text mb-5">2 ưu đãi trên không áp dụng đồng thời và cũng không áp dụng cùng với các ưu đãi khác</p>
+                      <p class="gray-text small-text">Click vào mã để sao chép vào bộ nhớ tạm</p>
+                      <h1>
+                        <button type="button" style="background-color: #d9edf6; border: none" class="badge mb-5 black-text px-5 poppins py-3">
+                          <b>BTSBBAGS</b>
+                        </button>
+                      </h1>
+                    </div>
+                    <div
+                      class="modal-footer d-flex flex-column align-items-center justify-content-center py-4"
+                      style="border: none; background-color: #eae9e2"
+                    >
+                      <span class="d-flex align-items-center">
+                        <i class="fas fa-envelope large-text text-primary"></i>&nbsp;
+                        <h6 class="poppins text-uppercase no-margin"><b>Đăng ký email để nhận thông báo khuyến mãi từ Vua Cua</b></h6>
+                      </span>
+                      <div class="input-group" style="width: 600px">
+                        <input
+                          type="text"
+                          class="form-control"
+                          style="border: none; box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2)"
+                          placeholder="Email"
+                          aria-label="Email"
+                          aria-describedby="basic-addon2"
+                        />
+                        <span id="basic-addon2">
+                          <button type="button" class="btn btn-danger primary-bg-color">Đăng ký</button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end: couponModal -->
               <div class="card gray-bg-color my-2" style="border: none">
                 <div class="card-body text-center small-text p-0">Từ: <b>12-03-2021</b></div>
               </div>
