@@ -5,6 +5,7 @@
   --yellow: #da903b;
   --blue: #59a3f6;
   --gray: #a3a3a3;
+  --light-yellow: #f3ad69;
 }
 /* variables */
 
@@ -138,6 +139,10 @@
 
 .yellow-bg-color {
   background-color: #ffad00!important;
+}
+
+.light-yellow-bg-color {
+  background-color: var(--light-yellow)
 }
 
 .gray-bg-color {
