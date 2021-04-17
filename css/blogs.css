@@ -1,0 +1,7 @@
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.5)!important;
+}
+
+ul li {
+  list-style-type: initial;
+}

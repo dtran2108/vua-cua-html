@@ -76,7 +76,7 @@
 }
 
 .black-text {
-  color: black;
+  color: black!important;
 }
 
 .green-text {
@@ -96,7 +96,7 @@
 }
 
 .gray-text {
-  color: var(--gray);
+  color: var(--gray)!important;
 }
 
 .upper-text {
@@ -501,4 +501,15 @@ a:hover {
   text-align: center;
   padding: 14px;
   text-decoration: none;
+}
+
+.scrollmenu li {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.accordion-no-btn::after {
+  display: none
 }
