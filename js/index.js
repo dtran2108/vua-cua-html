@@ -1,7 +1,3 @@
-function toggleDropdown() {
-  document.getElementById("userDropdown").classList.toggle("show");
-}
-
 function copyToClipboard() {
   var copyText = document.getElementById("couponCode");
   copyText.select();
