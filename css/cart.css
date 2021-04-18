@@ -1,0 +1,58 @@
+.card-header {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px!important;
+  -webkit-border-radius: 10px!important;
+  -moz-border-radius: 10px!important;
+  -ms-border-radius: 10px!important;
+  -o-border-radius: 10px!important;
+}
+
+.card {
+  border-radius: 10px!important;
+  -webkit-border-radius: 10px!important;
+  -moz-border-radius: 10px!important;
+  -ms-border-radius: 10px!important;
+  -o-border-radius: 10px!important;
+  box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.list-group {
+  border-radius: 10px!important;
+}
+
+.list-group-horizontal>.list-group-item:first-child {
+  border-bottom-left-radius: 10px!important;
+}
+
+.list-group-horizontal>.list-group-item:last-child {
+  border-top-right-radius: 10px!important;
+}
+
+.badge {
+  background-color: transparent !important;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
+  height: 20px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-outline-danger {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-danger {
+  background-color: var(--primary-color);
+}
+
+.carousel-caption {
+  display: flex!important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#discountItem .list-group-item {
+  background-color: var(--primary-color);
+}
