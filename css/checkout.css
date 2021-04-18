@@ -1,0 +1,9 @@
+#otherPersonCheck.form-check-input[type=checkbox] {
+  border: 2px solid var(--yellow);
+  width: 16px;
+  height: 16px;
+}
+
+#otherPersonCheck.form-check-input[type=checkbox]:checked {
+  background: var(--yellow);
+}
