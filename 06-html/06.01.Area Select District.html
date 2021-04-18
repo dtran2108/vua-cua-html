@@ -10,33 +10,40 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
-    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <title>01.02.Home-dropdown-login</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <title>06.01.Area select district</title>
   </head>
   <body>
-    <div class="ms-2 dropdown">
-      <img class="dropdown" src="./images/png/user-profile.png" alt="user profile" />
-      <div id="userDropdown" class="dropdown-content">
-        <button class="black-text yellow-bg-color content-button" data-bs-target="#registerModal" type="button" data-bs-toggle="modal">
-          Đăng nhập
-        </button>
-        <button class="black-text yellow-bg-color content-button" data-bs-target="#registerModal" type="button" data-bs-toggle="modal">
-          Đăng ký
-        </button>
-        <button class="white-text facebook-bg-color content-button">Facebook</button>
-        <button class="white-text google-bg-color content-button">Google</button>
-        <p class="small-text text-start no-margin">
-          <b>Đăng ký thành viên ngay để nhận nhiều ưu đãi!</b>
-        </p>
+    <button class="cus-input" data-bs-toggle="modal" data-bs-target="#areaModal" type="button">Chọn khu vực giao hàng</button>
+    <!-- start: areaModal -->
+    <div class="modal fade" id="areaModal" tabindex="-1" aria-labelledby="areaLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title poppins text-primary" id="areaLabel">
+              Quý khách vui lòng chọn khu vực để Vua Cua có thể gợi ý thực đơn phù hợp nhất
+            </p>
+          </div>
+          <div class="modal-body primary-bg-color text-center white-text poppins">
+            <h6>Chọn quận/huyện tại TP. Hồ Chí Minh</h6>
+          </div>
+          <div class="modal-body bottom-divider">Quận 1</div>
+          <div class="modal-body bottom-divider">Quận 2</div>
+          <div class="modal-body bottom-divider">Quận 3</div>
+          <div class="modal-body bottom-divider">Quận 4</div>
+          <div class="modal-body bottom-divider">Quận 5</div>
+          <div class="modal-body bottom-divider">Quận 6</div>
+        </div>
       </div>
     </div>
+    <!-- end: areaModal -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./jquery/index.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script src="../jquery/index.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
