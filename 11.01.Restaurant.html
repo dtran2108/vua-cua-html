@@ -419,8 +419,10 @@
                 </div>
               </div>
               <div class="col-lg-8 d-flex justify-content-center">
-                <div
-                  class="card-img d-none d-lg-block"
+                <button
+                  class="card-img d-none d-lg-block icon-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
                   style="
                     width: 100%;
                     height: 100%;
@@ -429,9 +431,11 @@
                     background-size: cover;
                     background-position: center center;
                   "
-                ></div>
-                <div
-                  class="card-img d-lg-none d-block"
+                ></button>
+                <button
+                  class="card-img d-lg-none d-block icon-button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#imageModal"
                   style="
                     width: 300px;
                     height: 300px;
@@ -440,7 +444,104 @@
                     background-size: cover;
                     background-position: center center;
                   "
-                ></div>
+                ></button>
+                <!-- start: image modal -->
+                <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                  <div class="modal-dialog d-flex justify-content-center align-items-center">
+                    <div class="modal-content desktop-width bg-transparent">
+                      <div class="modal-header" style="border: none">
+                        <button type="button" class="btn-close close-btn-pos" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body no-padding" style="border: none">
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <div
+                                class="card-img d-block w-100"
+                                style="
+                                  width: 100%;
+                                  height: 500px;
+                                  border-radius: 5px;
+                                  background-image: url('https://i.pinimg.com/736x/d8/1d/2e/d81d2ed5c874151aa10e36213516c290.jpg');
+                                  background-size: cover;
+                                  background-position: center center;
+                                "
+                              ></div>
+                            </div>
+                            <div class="carousel-item">
+                              <div
+                                class="card-img d-block w-100"
+                                style="
+                                  width: 100%;
+                                  height: 500px;
+                                  border-radius: 5px;
+                                  background-image: url('https://kenh14cdn.com/203336854389633024/2020/12/28/11-16091674148112007100633.jpg');
+                                  background-size: cover;
+                                  background-position: center center;
+                                "
+                              ></div>
+                            </div>
+                            <div class="carousel-item">
+                              <div
+                                class="card-img d-block w-100"
+                                style="
+                                  width: 100%;
+                                  height: 500px;
+                                  border-radius: 5px;
+                                  background-image: url('https://static1.bestie.vn/Mlog/ImageContent/202004/lisa-co-chon-o-lai-blackpink-khong-neu-het-han-hop-dong-voi-yg-15d99d.png');
+                                  background-size: cover;
+                                  background-position: center center;
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                          <button
+                            class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="prev"
+                          >
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button
+                            class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselExampleControls"
+                            data-bs-slide="next"
+                          >
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="modal-footer bg-white m-top-footer-border mt-3">
+                        <div class="large-text btn-lg white-text primary-bg-color text-center" style="width: 100%">
+                          Chi nhánh nhà hàng Vua Cua - Vũ Huy Tuấn
+                        </div>
+                      </div>
+                      <div class="modal-footer m-bottom-footer-border" style="background-color: #ebebeb">
+                        <div class="row">
+                          <div class="col-lg-6 d-flex justify-content-start align-items-center" style="border-right: 1px solid #b4b4b4">
+                            <i class="fas fa-map-marker-alt text-primary large-text"></i> &nbsp;&nbsp;&nbsp;
+                            <p class="poppins-light gray-text no-margin">
+                              30 Vũ Huy Tuấn, Phường 3, Quận Bình Thạnh, thành phố Hồ Chí Minh
+                            </p>
+                          </div>
+                          <div class="col-lg-3 d-flex justify-content-center align-items-center" style="border-right: 1px solid #b4b4b4">
+                            <i class="fas fa-map-marker-alt text-primary large-text"></i> &nbsp;&nbsp;&nbsp;
+                            <p class="poppins-light gray-text no-margin">Giờ mở cửa:<br />10:00 - 23:00</p>
+                          </div>
+                          <div class="col-lg-3 d-flex justify-content-center align-items-center">
+                            <i class="fas fa-map-marker-alt text-primary large-text"></i> &nbsp;&nbsp;&nbsp;
+                            <p class="poppins-light gray-text no-margin">Hotline:<br />1900 63387</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- end: image modal -->
               </div>
             </div>
           </div>
