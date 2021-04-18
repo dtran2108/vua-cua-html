@@ -160,6 +160,10 @@
 .secondary-bg-color {
   background-color: #f0ede6 !important;
 }
+
+.transparent-bg {
+  background-color: transparent !important;
+}
 /* end: Background color */
 
 .learn-more-btn {
