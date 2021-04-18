@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/solid.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/checkout-payment.css" />
+    <title>14.01.Checkout Payment</title>
+  </head>
+  <body>
+    <div class="d-none d-lg-block">
+      <!-- Start: header -->
+      <div class="container-lg">
+        <div class="row my-3">
+          <div class="col-md-8 d-flex align-items-center">
+            <img src="../images/png/logo.png" alt="logo" class="me-4" />
+            <a href="#"
+              ><h6 class="poppins me-4"><b>Thực đơn</b></h6></a
+            >
+            <a href="#"
+              ><h6 class="poppins me-4"><b>Đặt bàn</b></h6></a
+            >
+            <a href="#"
+              ><h6 class="poppins me-4"><b>Khuyến mãi</b></h6></a
+            >
+            <a href="#"
+              ><h6 class="poppins me-4"><b>Chia sẻ bí quyết</b></h6></a
+            >
+            <a href="#"
+              ><h6 class="poppins"><b>Tham quan nhà hàng</b></h6></a
+            >
+          </div>
+          <div class="col-md-4 d-flex align-items-center">
+            <iframe src="../images/svg/address.svg" width="25px" height="35px" class="me-2"></iframe>
+            <p class="poppins me-2 small-text"><b>Chọn khu vực giao hàng</b></p>
+            <input class="cus-input me-1" placeholder="Tìm món ăn..." />
+            <img src="../images/png/cart.png" alt="cart" class="me-1" />
+            <img src="../images/png/user-profile.png" alt="user profile" />
+          </div>
+        </div>
+      </div>
+      <!-- end: header -->
+    </div>
+
+    <!-- start: mobile header -->
+    <nav class="navbar navbar-dark yellow-bg-color d-lg-none d-block sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="fas fa-home white-text"></i>&nbsp;
+          <i class="fas fa-bars white-text"></i>
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" style="width: 190px" type="search" placeholder="Tìm món ăn" aria-label="Search" />
+          <a class="navbar-brand">
+            <i class="fas fa-map-marker-alt white-text"></i>
+            <i class="fas fa-cart-plus white-text"></i>
+          </a>
+        </form>
+      </div>
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>'; position: relative; top: 5px; height: 15px" aria-label="breadcrumb">
+          <ol class="breadcrumb poppins">
+            <li class="breadcrumb-item small-text">
+              <i class="fas fa-home white-text"></i>&nbsp;
+              <a href="../01.01.Home.html" style="color: rgb(31, 164, 253) !important">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item small-text active black-text" aria-current="page">Điểm thưởng</li>
+          </ol>
+        </nav>
+      </div>
+    </nav>
+    <!-- end: mobile header -->
+
+    <!-- end: mobile ad -->
+    <div class="d-lg-none d-block container">
+      <img src="../images/png/ad-horizon-banner.png" width="100%" class="my-2" />
+    </div>
+    <!-- end: mobile ad -->
+
+    <div class="secondary-bg-color" style="border-bottom: 5px solid #bd1e2d">
+      <div class="container py-3">
+        <!-- start: gio hang cua ban -->
+        <div class="card">
+          <div class="card-header text-uppercase green-text poppins text-center py-3">
+            <h3 class="no-margin">
+              <b><i class="fas fa-check-circle"></i>&nbsp;&nbsp;đặt hàng thành công</b>
+            </h3>
+          </div>
+          <!-- start: combo -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-11">
+              <div class="card-body border-bottom pb-3">
+                <ul class="poppins medium-text">
+                  <li>Người nhận: Chô Chô, 091236821</li>
+                  <li>Địa chỉ nhận hàng: 14 Phan Tôn, phường Đakao, Quận 1, tp Hồ Chí Minh</li>
+                  <li>Thời gian nhận hàng dự kiến: 12:00 - 12:30, Thứ tư (07/04/2021)</li>
+                  <li>
+                    <a
+                      data-bs-toggle="collapse"
+                      href="#comboCollapse"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="comboCollapse"
+                      class="blue-text"
+                    >
+                      Danh sách sản phẩm &nbsp;<i class="fas fa-caret-down"></i>
+                    </a>
+                  </li>
+                </ul>
+                <div class="row collapse" id="comboCollapse">
+                  <div class="col-lg-2">
+                    <img src="../images/png/combo-crab.png" />
+                  </div>
+                  <div class="col-lg-10">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap">
+                      <h3 class="poppins"><b>Combo cua thịt nhỏ</b></h3>
+                      <h2 class="poppins text-primary"><b>399,000</b></h2>
+                    </div>
+                    <p class="poppins-light mt-1 mb-0">Xốt tiêu đen, Salad dầu giấm x 1, Cơm chiên trứng x 1</p>
+                    <p class="poppins-light no-margin"><i>Ghi chú: không bỏ hành vào cơm</i></p>
+                    <div class="d-flex mt-2 align-items-center">
+                      <ul class="list-group list-group-horizontal me-4">
+                        <li class="list-group-item no-border-right">
+                          <button class="icon-button gray-text"><i class="fas fa-minus-circle"></i></button>
+                        </li>
+                        <li class="list-group-item text-primary no-border-right">1</li>
+                        <li class="list-group-item">
+                          <button class="icon-button gray-text"><i class="fas fa-plus-circle"></i></button>
+                        </li>
+                      </ul>
+                      <button class="icon-button"><span class="badge poppins-light small-text">remove</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: combo -->
+          <!-- start: price -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-11">
+              <div class="card-body pb-3 d-flex flex-column align-items-end">
+                <table style="width: 500px">
+                  <tr>
+                    <td class="poppins-light text-end">Tiền hàng:</td>
+                    <td class="large-text text-primary poppins text-end"><b>399,000</b></td>
+                  </tr>
+                  <tr>
+                    <td class="poppins-light text-end">VAT:</td>
+                    <td class="medium-text poppins text-end">39.900</td>
+                  </tr>
+                  <tr>
+                    <td class="poppins-light text-end">Phí giao hàng dự kiến:</td>
+                    <td class="medium-text poppins text-end">20.000</td>
+                  </tr>
+                  <tr>
+                    <td class="poppins-light text-end">Tổng tiền:</td>
+                    <td class="large-text poppins text-end text-primary"><b>458,900</b></td>
+                  </tr>
+                </table>
+                <button type="button" class="btn btn-outline-danger mt-3">
+                  <i class="fas fa-tags"></i>&nbsp;&nbsp;&nbsp;Dùng phiếu mua hàng
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- end: price -->
+          <!-- start: alert -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-11">
+              <div class="alert alert-warning text-primary d-flex align-items-center" role="alert">
+                <i class="fas fa-check-circle green-text large-text"></i>&nbsp;&nbsp;<b>Thanh toán:</b>&nbsp; Tiền mặt khi nhận hàng
+              </div>
+            </div>
+          </div>
+          <!-- end: alert -->
+          <!-- start: thanh toan tien mat khi nhan bang cach -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-11">
+              <div class="card-body pb-3 d-flex flex-column align-items-center">
+                <div class="container px-4">
+                  <p class="poppins">Thanh toán tiền mặt khi nhận hàng bằng cách:</p>
+                  <div class="row gx-5">
+                    <div class="col">
+                      <a
+                        aria-pressed="true"
+                        class="btn btn-lg btn-outline-primary active"
+                        data-bs-toggle="button"
+                        href="#"
+                        role="button"
+                        style="width: 100%"
+                        >Tiền mặt khi nhận hàng</a
+                      >
+                    </div>
+                    <div class="col">
+                      <a
+                        class="btn btn-lg btn-outline-primary"
+                        data-bs-toggle="button"
+                        href="#"
+                        role="button"
+                        style="width: 100%"
+                        >Chuyển khoản</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: thanh toan tien mat khi nhan bang cach -->
+          <!-- start: Thanh toan -->
+          <div class="row d-flex justify-content-center">
+            <div class="col-11">
+              <div class="card-body pb-3 d-flex flex-column align-items-center">
+                <div class="row d-flex justify-content-center">
+                  <button type="button" class="btn btn-danger btn-lg text-uppercase poppins large-text" style="width: 300px">
+                    Thanh toán
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: Thanh toan -->
+          <!-- start: divider -->
+          <div style="height: 10px; border-bottom: 1px solid #ebebeb"></div>
+          <!-- end: divider -->
+          <!-- start: thanh toan tien mat khi nhan bang cach -->
+          <div class="row d-flex justify-content-center mt-4 mb-3">
+            <div class="col-11">
+              <div class="card-body pb-3 d-flex flex-column align-items-center">
+                <div class="container px-4">
+                  <div class="row gx-5">
+                    <div class="col">
+                      <a
+                        class="btn btn-lg btn-outline-secondary"
+                        href="#"
+                        role="button"
+                        style="width: 100%"
+                        ><b>Huỷ đơn hàng</b></a
+                      >
+                    </div>
+                    <div class="col">
+                      <a
+                        class="btn btn-lg btn-outline-secondary"
+                        href="#"
+                        role="button"
+                        style="width: 100%"
+                        ><b>Sửa đơn hàng</b></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end: thanh toan tien mat khi nhan bang cach -->
+          <!-- start: ve trang chuc -->
+          <div class="card-footer d-flex justify-content-center align-items-center py-3">
+            <a class="poppins"><b>Về trang chủ</b></a>
+          </div>
+          <!-- end: ve trang chuc -->
+        </div>
+        <!-- end: gio hang cua ban -->
+      </div>
+    </div>
+
+    <!-- Start: Dang ky khuyen mai -->
+    <div class="py-5 secondary-bg-color">
+      <div class="container-lg">
+        <div class="row">
+          <center class="col-md-4"><img src="../images/png/full-logo.png" alt="full logo" /></center>
+          <div class="col-md-4 red-divider">
+            <h5 class="poppins text-primary no-margin text-center pb-3">Để lại địa chỉ email<br />để đăng ký nhận khuyến mãi nhé!</h5>
+            <center>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control cus-input"
+                  placeholder="Nhập địa chỉ email của bạn"
+                  aria-label="email"
+                  aria-describedby="basic-addon2"
+                />
+                <span id="basic-addon2"><button class="register-btn">Đăng ký</button></span>
+              </div>
+            </center>
+          </div>
+          <div class="col-md-4 mt-md-0 mt-2">
+            <center>
+              <p class="poppins no-margin">Vua Cua đang ở rất gần bạn đấy!</p>
+            </center>
+            <center class="my-3">
+              <div class="d-flex justify-content-between align-items-center" style="width: 200px">
+                <img src="../images/png/facebook.png" alt="facebook" />
+                <img src="../images/png/insta.png" alt="instagram" />
+                <img src="../images/png/youtube.png" alt="youtube" />
+              </div>
+            </center>
+            <center>
+              <p class="poppins text-primary">Hãy kết nối & sẻ chia với chúng tôi nhé!</p>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End: Dang ky khuyen mai -->
+
+    <!-- Start: Footer -->
+    <footer class="py-5 primary-bg-color">
+      <div class="container-lg">
+        <div class="row">
+          <div class="col-md-3 white-text">
+            <h4 class="aachenb white-text text-uppercase">Nhà hàng vua cua</h4>
+            <p class="poppins small-text no-margin">Công ty cổ phần thương mại dịch vụ Vua Cua</p>
+            <p class="poppins small-text no-margin">14 Phan Tôn, phường Đakao, quận 1</p>
+            <p class="poppins small-text no-margin">ĐT: 0283 6203862. Email: cskh@vuacua.vn </p>
+          </div>
+          <div class="col-md-3 white-text">
+            <p class="poppins small-text no-margin">Về Vua Cua</p>
+            <p class="poppins small-text no-margin">Chính sách và quy định chung</p>
+            <p class="poppins small-text no-margin">Hướng dẫn đặt hàng</p>
+            <p class="poppins small-text no-margin">Giao hàng - Thanh toán</p>
+            <p class="poppins small-text no-margin">Khiếu nại & giải quyết khiếu nại</p>
+            <p class="poppins small-text no-margin">Bảo mật</p>
+          </div>
+          <div class="col-md-3 my-3 mx-0">
+            <img src="../images/png/bocongthuong.png" alt="bo cong thuong" />
+          </div>
+          <div class="col-md-3 white-text">
+            <div class="d-flex justify-content-start align-items-center mb-3">
+              <img src="../images/png/white-phone.png" alt="white phone" style="position: 'relative'; bottom: 8" />
+              <h3 class="aachenb white-text no-margin">1900 6333 87</h3>
+            </div>
+            <p class="poppins small-text no-margin">Giờ hoạt động</p>
+            <p class="poppins small-text no-margin">Nhà hàng: 10:00 - 23:00 (T2 - Chủ Nhật)</p>
+            <p class="poppins small-text no-margin">Giao hàng tận nơi: 10:00 - 21:30 (T2 - Chủ Nhật)</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End: Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../jquery/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
