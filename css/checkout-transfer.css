@@ -1,0 +1,8 @@
+.card-header {
+  border: 1px solid var(--primary-color);
+  border-radius: 10px!important;
+  -webkit-border-radius: 10px!important;
+  -moz-border-radius: 10px!important;
+  -ms-border-radius: 10px!important;
+  -o-border-radius: 10px!important;
+}

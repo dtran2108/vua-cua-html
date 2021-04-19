@@ -80,15 +80,15 @@
 }
 
 .green-text {
-  color: var(--green);
+  color: var(--green)!important;
 }
 
 .yellow-text {
-  color: var(--yellow);
+  color: var(--yellow)!important;
 }
 
 .blue-text {
-  color: var(--blue);
+  color: var(--blue)!important;
 }
 
 .white-text {
@@ -398,7 +398,7 @@ a:hover {
 
 .img-wrap {
   max-width: fit-content;
-  margin-right: 24px;
+  margin-right: 0;
 }
 
 .chip {
@@ -414,7 +414,7 @@ a:hover {
 }
 
 .carousel-caption {
-  top: 1.5rem;
+  top: 1rem;
 }
 
 .carousel-description {
@@ -516,4 +516,18 @@ a:hover {
 
 .accordion-no-btn::after {
   display: none
+}
+
+.chain {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.chain:hover {
+  opacity: 1;
+}
+
+.chain.active {
+  opacity: 1;
 }

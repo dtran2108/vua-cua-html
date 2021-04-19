@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/solid.css" />
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/fontawesome.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/checkout-payment.css" />
-    <title>14.01.Checkout Payment</title>
+    <link rel="stylesheet" href="../css/checkout-transfer.css" />
+    <title>15.01.Checkout Transfer</title>
   </head>
   <body>
     <div class="d-none d-lg-block">
@@ -92,57 +92,21 @@
       <div class="container py-3">
         <!-- start: gio hang cua ban -->
         <div class="card">
-          <div class="card-header text-uppercase green-text poppins text-center py-3">
-            <h3 class="no-margin">
-              <b><i class="fas fa-check-circle"></i>&nbsp;&nbsp;đặt hàng thành công</b>
-            </h3>
+          <div class="card-header text-uppercase text-primary poppins text-center py-3">
+            <h3 class="no-margin"><b>Thanh toán đơn hàng</b></h3>
           </div>
           <!-- start: combo -->
           <div class="row d-flex justify-content-center">
             <div class="col-11">
               <div class="card-body border-bottom pb-3">
-                <ul class="poppins medium-text">
-                  <li>Người nhận: Chô Chô, 091236821</li>
-                  <li>Địa chỉ nhận hàng: 14 Phan Tôn, phường Đakao, Quận 1, tp Hồ Chí Minh</li>
-                  <li>Thời gian nhận hàng dự kiến: 12:00 - 12:30, Thứ tư (07/04/2021)</li>
-                  <li>
-                    <a
-                      data-bs-toggle="collapse"
-                      href="#comboCollapse"
-                      role="button"
-                      aria-expanded="false"
-                      aria-controls="comboCollapse"
-                      class="blue-text"
-                    >
-                      Danh sách sản phẩm &nbsp;<i class="fas fa-caret-down"></i>
-                    </a>
-                  </li>
-                </ul>
-                <div class="row collapse" id="comboCollapse">
-                  <div class="col-lg-2">
-                    <img src="../images/png/combo-crab.png" />
-                  </div>
-                  <div class="col-lg-10">
-                    <div class="d-flex justify-content-between align-items-center flex-wrap">
-                      <h3 class="poppins"><b>Combo cua thịt nhỏ</b></h3>
-                      <h2 class="poppins text-primary"><b>399,000</b></h2>
-                    </div>
-                    <p class="poppins-light mt-1 mb-0">Xốt tiêu đen, Salad dầu giấm x 1, Cơm chiên trứng x 1</p>
-                    <p class="poppins-light no-margin"><i>Ghi chú: không bỏ hành vào cơm</i></p>
-                    <div class="d-flex mt-2 align-items-center">
-                      <ul class="list-group list-group-horizontal me-4">
-                        <li class="list-group-item no-border-right">
-                          <button class="icon-button gray-text"><i class="fas fa-minus-circle"></i></button>
-                        </li>
-                        <li class="list-group-item text-primary no-border-right">1</li>
-                        <li class="list-group-item">
-                          <button class="icon-button gray-text"><i class="fas fa-plus-circle"></i></button>
-                        </li>
-                      </ul>
-                      <button class="icon-button"><span class="badge poppins-light small-text">remove</span></button>
-                    </div>
-                  </div>
+                <h3 class="poppins">
+                  <b>Đơn hàng</b>&nbsp;<span class="blue-text"><b>s04537</b></span>
+                </h3>
+                <div class="alert alert-success d-flex align-items-center poppins mb-5" role="alert">
+                  <h5><span class="badge bg-success">Đăng kí</span></h5>
+                  &nbsp; để theo dõi đơn hàng của bạn
                 </div>
+                <h5 class="poppins no-margin">Thông tin thanh toán:</h5>
               </div>
             </div>
           </div>
@@ -150,126 +114,54 @@
           <!-- start: price -->
           <div class="row d-flex justify-content-center">
             <div class="col-11">
-              <div class="card-body pb-3 d-flex flex-column align-items-end">
+              <div class="card-body pb-3 d-flex justify-content-between">
+                <p class="poppins-light medium-text no-margin">Chuyển khoản ngân hàng:</p>
                 <table style="width: 500px">
-                  <tr>
-                    <td class="poppins-light text-end">Tiền hàng:</td>
-                    <td class="large-text text-primary poppins text-end"><b>399,000</b></td>
-                  </tr>
-                  <tr>
-                    <td class="poppins-light text-end">VAT:</td>
-                    <td class="medium-text poppins text-end">39.900</td>
-                  </tr>
-                  <tr>
-                    <td class="poppins-light text-end">Phí giao hàng dự kiến:</td>
-                    <td class="medium-text poppins text-end">20.000</td>
-                  </tr>
                   <tr>
                     <td class="poppins-light text-end">Tổng tiền:</td>
                     <td class="large-text poppins text-end text-primary"><b>458,900</b></td>
                   </tr>
                 </table>
-                <button type="button" class="btn btn-outline-danger mt-3">
-                  <i class="fas fa-tags"></i>&nbsp;&nbsp;&nbsp;Dùng phiếu mua hàng
-                </button>
+              </div>
+              <div class="card secondary-bg-color" style="box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2); border: 1px solid transparent">
+                <div class="card-body">
+                  <p class="poppins-light medium-text">Hãy chuyển khoản vào thông tin tài khoản dưới đây:</p>
+                  <p class="poppins medium-text text-primary">
+                    <b>Ngân hàng: Ngân hàng thương mại cổ phần Ngoại thương Việt Nam - Vietcombank</b>
+                  </p>
+                  <p class="poppins medium-text text-primary">
+                    <b>Chi nhánh: Đông Sài Gòn</b>
+                  </p>
+                  <p class="poppins medium-text text-primary">
+                    <b>Chủ tài khoản: Đoàn Thị Anh Thư</b>
+                  </p>
+                  <p class="poppins medium-text text-primary">
+                    <b>Nội dung chuyển khoản: Tên chi nhánh nhà hàng - Tên khách - Sđt khách</b>
+                  </p>
+                  <p class="poppins-light medium-text mt-5">Quý khách vui lòng chọn chuyển khoản nhanh trong ngày</p>
+                </div>
               </div>
             </div>
           </div>
           <!-- end: price -->
-          <!-- start: alert -->
-          <div class="row d-flex justify-content-center">
+          <!-- start: dat hang -->
+          <div class="row d-flex justify-content-center mt-2">
             <div class="col-11">
-              <div class="alert alert-warning text-primary d-flex align-items-center" role="alert">
-                <i class="fas fa-check-circle green-text large-text"></i>&nbsp;&nbsp;<b>Thanh toán:</b>&nbsp; Tiền mặt khi nhận hàng
-              </div>
-            </div>
-          </div>
-          <!-- end: alert -->
-          <!-- start: thanh toan tien mat khi nhan bang cach -->
-          <div class="row d-flex justify-content-center">
-            <div class="col-11">
-              <div class="card-body pb-3 d-flex flex-column align-items-center">
+              <div class="card-body pb-5 d-flex flex-column align-items-center">
                 <div class="container px-4">
-                  <p class="poppins">Thanh toán tiền mặt khi nhận hàng bằng cách:</p>
                   <div class="row gx-5">
-                    <div class="col">
-                      <a
-                        aria-pressed="true"
-                        class="btn btn-lg btn-outline-primary active"
-                        data-bs-toggle="button"
-                        href="#"
-                        role="button"
-                        style="width: 100%"
-                        >Tiền mặt khi nhận hàng</a
-                      >
+                    <div class="col d-flex justify-content-center">
+                      <a class="green-text poppins"><b>Về trang chủ</b></a>
                     </div>
-                    <div class="col">
-                      <a
-                        class="btn btn-lg btn-outline-primary"
-                        data-bs-toggle="button"
-                        href="#"
-                        role="button"
-                        style="width: 100%"
-                        >Chuyển khoản</a
-                      >
+                    <div class="col d-flex justify-content-center">
+                      <a class="text-primary poppins"><b>Tiếp tục mua hàng >></b></a>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- end: thanh toan tien mat khi nhan bang cach -->
-          <!-- start: Thanh toan -->
-          <div class="row d-flex justify-content-center">
-            <div class="col-11">
-              <div class="card-body pb-3 d-flex flex-column align-items-center">
-                <div class="row d-flex justify-content-center">
-                  <button type="button" class="btn btn-danger btn-lg text-uppercase poppins large-text" style="width: 300px">
-                    Thanh toán
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end: Thanh toan -->
-          <!-- start: divider -->
-          <div style="height: 10px; border-bottom: 1px solid #ebebeb"></div>
-          <!-- end: divider -->
-          <!-- start: thanh toan tien mat khi nhan bang cach -->
-          <div class="row d-flex justify-content-center mt-4 mb-3">
-            <div class="col-11">
-              <div class="card-body pb-3 d-flex flex-column align-items-center">
-                <div class="container px-4">
-                  <div class="row gx-5">
-                    <div class="col">
-                      <a
-                        class="btn btn-lg btn-outline-secondary"
-                        href="#"
-                        role="button"
-                        style="width: 100%"
-                        ><b>Huỷ đơn hàng</b></a
-                      >
-                    </div>
-                    <div class="col">
-                      <a
-                        class="btn btn-lg btn-outline-secondary"
-                        href="#"
-                        role="button"
-                        style="width: 100%"
-                        ><b>Sửa đơn hàng</b></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end: thanh toan tien mat khi nhan bang cach -->
-          <!-- start: ve trang chuc -->
-          <div class="card-footer d-flex justify-content-center align-items-center py-3">
-            <a class="poppins"><b>Về trang chủ</b></a>
-          </div>
-          <!-- end: ve trang chuc -->
+          <!-- end: dat hang -->
         </div>
         <!-- end: gio hang cua ban -->
       </div>
@@ -352,6 +244,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../jquery/index.js"></script>
     <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
       crossorigin="anonymous"
@@ -359,6 +256,21 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
   </body>
