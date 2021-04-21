@@ -1,0 +1,15 @@
+th {
+  color: var(--primary-color);
+}
+
+th {
+  font-family: 'Poppins Medium';
+  padding: 14px 16px;
+  border-bottom: 2px solid #d8d8d8;
+  font-weight: 900;
+}
+
+td {
+  padding: 8px 16px;
+  border-bottom: 1px solid #ebebeb;
+}
