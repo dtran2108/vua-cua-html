@@ -531,3 +531,38 @@ a:hover {
 .chain.active {
   opacity: 1;
 }
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -ms-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#removeBtn .bg-danger {
+  color: var(--primary-color)!important;
+  background-color: white!important;
+  border: 1px solid var(--primary-color)!important;
+}
