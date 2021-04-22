@@ -76,19 +76,19 @@
 }
 
 .black-text {
-  color: black!important;
+  color: black !important;
 }
 
 .green-text {
-  color: var(--green)!important;
+  color: var(--green) !important;
 }
 
 .yellow-text {
-  color: var(--yellow)!important;
+  color: var(--yellow) !important;
 }
 
 .blue-text {
-  color: var(--blue)!important;
+  color: var(--blue) !important;
 }
 
 .white-text {
@@ -96,7 +96,7 @@
 }
 
 .gray-text {
-  color: var(--gray)!important;
+  color: var(--gray) !important;
 }
 
 .upper-text {
@@ -515,7 +515,7 @@ a:hover {
 }
 
 .accordion-no-btn::after {
-  display: none
+  display: none;
 }
 
 .chain {
@@ -556,13 +556,41 @@ a:hover {
 
 /* Clear floats after the columns */
 .row:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
 
 #removeBtn .bg-danger {
-  color: var(--primary-color)!important;
-  background-color: white!important;
-  border: 1px solid var(--primary-color)!important;
+  color: var(--primary-color) !important;
+  background-color: white !important;
+  border: 1px solid var(--primary-color) !important;
+}
+
+#chi-nhanh {
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0 24px;
+}
+
+#chiNhanhBg {
+  transition: all 0.1s ease-in-out;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+}
+
+.stepOneButton,
+.stepTwoButton,
+.stepThreeButton {
+  transition: all 0.15s ease-in-out;
+}
+
+.stepOneButton:hover,
+.stepTwoButton:hover,
+.stepThreeButton:hover {
+  background-color: var(--primary-color);
+  color: white;
 }

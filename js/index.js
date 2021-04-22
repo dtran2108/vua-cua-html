@@ -58,3 +58,30 @@ function addItem(addButton) {
     parent.appendChild(createRemoveBtn());
   }
 }
+
+function stepOne() {
+  document.getElementById("stepOneHeader").style.display = 'none';
+  document.getElementById("stepTwoHeader").style.display = 'block';
+  const stepOneButtons = document.getElementsByClassName("stepOneButton");
+  const stepTwoButtons = document.getElementsByClassName("stepTwoButton");
+  for (const btn of stepOneButtons) {btn.style.display = 'none'}
+  for (const btn of stepTwoButtons) {btn.style.display = 'block'}
+}
+
+function stepTwo() {
+  document.getElementById("stepTwoHeader").style.display = 'none';
+  document.getElementById("stepThreeHeader").style.display = 'block';
+  const stepTwoButtons = document.getElementsByClassName("stepTwoButton");
+  const stepThreeButtons = document.getElementsByClassName("stepThreeButton");
+  for (const btn of stepTwoButtons) {btn.style.display = 'none'}
+  for (const btn of stepThreeButtons) {btn.style.display = 'block'}
+}
+
+function stepThree() {
+  document.getElementById("stepThreeHeader").style.display = 'none';
+  document.getElementById("stepOneHeader").style.display = 'block';
+  const stepThreeButtons = document.getElementsByClassName("stepThreeButton");
+  const stepOneButtons = document.getElementsByClassName("stepOneButton");
+  for (const btn of stepThreeButtons) {btn.style.display = 'none'}
+  for (const btn of stepOneButtons) {btn.style.display = 'block'}
+}

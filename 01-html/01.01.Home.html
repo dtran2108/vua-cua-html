@@ -463,14 +463,109 @@
                   </p>
                 </div>
                 <div class="modal-body primary-bg-color text-center white-text poppins">
-                  <h6>Chọn tỉnh/thành phố</h6>
+                  <h6 id="stepOneHeader">Chọn tỉnh/thành phố</h6>
+                  <h6 id="stepTwoHeader" style="display: none">Chọn quận/huyện tại TP. Hồ Chí Minh</h6>
+                  <h6 id="stepThreeHeader" style="display: none">Chọn phường/xã tại Quận 1</h6>
                 </div>
-                <div class="modal-body bottom-divider">TP Hồ Chí Minh</div>
-                <div class="modal-body bottom-divider">TP Cần Thơ</div>
-                <div class="modal-body bottom-divider">TP Long An</div>
-                <div class="modal-body bottom-divider">TP Vũng Tàu</div>
-                <div class="modal-body bottom-divider">Bình Dương</div>
-                <div class="modal-body bottom-divider">Đồng Nai</div>
+                <!-- step one -->
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">TP Hồ Chí Minh</div>
+                </button>
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">TP Cần Thơ</div>
+                </button>
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">TP Long An</div>
+                </button>
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">TP Vũng Tàu</div>
+                </button>
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">Bình Dương</div>
+                </button>
+                <button type="button" class="icon-button stepOneButton" style="width: 100%" onclick="stepOne()">
+                  <div class="modal-body bottom-divider">Đồng Nai</div>
+                </button>
+                <!-- step two -->
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 1</div>
+                </button>
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 2</div>
+                </button>
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 3</div>
+                </button>
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 4</div>
+                </button>
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 5</div>
+                </button>
+                <button style="display: none; width: 100%" type="button" class="icon-button stepTwoButton" onclick="stepTwo()">
+                  <div class="modal-body bottom-divider">Quận 6</div>
+                </button>
+                <!-- step three -->
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Bến Thành</div>
+                </button>
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Nguyễn Thái Bình</div>
+                </button>
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Cô Giang</div>
+                </button>
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Phạm Ngũ Lão</div>
+                </button>
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Cầu Kho</div>
+                </button>
+                <button
+                  style="display: none; width: 100%"
+                  type="button"
+                  class="icon-button stepThreeButton"
+                  style="width: 100%"
+                  data-bs-dismiss="modal"
+                  onclick="stepThree()"
+                >
+                  <div class="modal-body bottom-divider">Phường Đa Kao</div>
+                </button>
               </div>
             </div>
           </div>
@@ -915,16 +1010,16 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img class="d-block w-100" src="../images/png/black-bg.jpeg" alt="First slide" />
-          <div class="carousel-caption d-md-flex pt-0 flex-column justify-content-center">
+          <div id="chi-nhanh" class="carousel-caption d-md-flex pt-0 flex-column justify-content-center">
             <div class="cardillac mb-5 d-md-block d-none">
-              <h5 class="poppins">Cùng tham quan</h5>
+              <h5 class="poppins mt-5">Cùng tham quan</h5>
               <h1 class="aachenb text-uppercase">không gian nhà hàng vua cua</h1>
             </div>
-            <div class="row">
+            <div class="row mb-5">
               <div class="col-md-4 text-center">
                 <div class="card bg-transparent text-white">
                   <img src="../images/png/restaurant-space.png" class="card-img" alt="restaurant space" />
-                  <div class="card-img-overlay dark-overlay d-flex align-items-end">
+                  <div id="chiNhanhBg" class="card-img-overlay dark-overlay d-flex align-items-end">
                     <h5 class="card-title">Chi nhánh Vũ Huy Tấn</h5>
                   </div>
                 </div>
@@ -932,7 +1027,7 @@
               <div class="col-md-4 text-center d-md-block d-none">
                 <div class="card bg-transparent text-white">
                   <img src="../images/png/restaurant-space.png" class="card-img" alt="restaurant space" />
-                  <div class="card-img-overlay dark-overlay d-flex align-items-end">
+                  <div id="chiNhanhBg" class="card-img-overlay dark-overlay d-flex align-items-end">
                     <h5 class="card-title">Chi nhánh Võ Văn Kiệt</h5>
                   </div>
                 </div>
@@ -940,7 +1035,7 @@
               <div class="col-md-4 text-center d-md-block d-none">
                 <div class="card bg-transparent text-white">
                   <img src="../images/png/restaurant-space.png" class="card-img" alt="restaurant space" />
-                  <div class="card-img-overlay dark-overlay d-flex align-items-end">
+                  <div id="chiNhanhBg" class="card-img-overlay dark-overlay d-flex align-items-end">
                     <h5 class="card-title">Chi nhánh Bàu Cát</h5>
                   </div>
                 </div>
@@ -964,7 +1059,7 @@
 
     <!-- Start: Dang ky khuyen mai -->
     <div class="py-5 secondary-bg-color">
-      <div class="row d-flex justify-content-center">
+      <div class="d-flex justify-content-center">
         <center class="col-md-2"><img src="../images/png/full-logo.png" alt="full logo" width="200px" height="220px" /></center>
         <div class="col-md-5 red-divider d-flex flex-column justify-content-center align-items-center">
           <h5 class="poppins text-primary no-margin text-center pb-3">Để lại địa chỉ email<br />để đăng ký nhận khuyến mãi nhé!</h5>
