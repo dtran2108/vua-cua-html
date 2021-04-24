@@ -66,9 +66,15 @@
             />
             <div class="text-end d-flex justify-content-end mt-2">
               <div>
-                <button class="icon-button" data-bs-target="#bookingModal" type="button" data-bs-toggle="modal">
+                <button
+                  class="icon-button main-cart"
+                  data-totalitems="0"
+                  data-bs-target="#bookingModal"
+                  type="button"
+                  data-bs-toggle="modal"
+                >
                   <img src="../images/png/cart.png" alt="cart" width="40px" height="40px" />
-                </button>               
+                </button>
               </div>
               <div class="d-flex align-items-center ms-3">
                 <h6 class="poppins text-primary no-margin large-text">9,999,000</h6>
@@ -134,29 +140,41 @@
 
     <!-- Start: simplified header -->
     <div class="row py-3 px-5" id="simplifiedHeader">
-      <div class="col-md-8 d-flex align-items-center">
+      <ul class="col-md-8 d-flex align-items-center">
         <img src="../images/png/logo.png" alt="logo" class="me-4" />
-        <a href="#"
-          ><h5 class="poppins-light me-4"><b>Thực đơn</b></h5></a
-        >
-        <a href="#"
-          ><h5 class="poppins-light me-4"><b>Đặt bàn</b></h5></a
-        >
-        <a href="#"
-          ><h5 class="poppins-light me-4"><b>Khuyến mãi</b></h5></a
-        >
-        <a href="#"
-          ><h5 class="poppins-light me-4"><b>Chia sẻ bí quyết</b></h5></a
-        >
-        <a href="#"
-          ><h5 class="poppins-light"><b>Tham quan nhà hàng</b></h5></a
-        >
-      </div>
+        <li>
+          <a href="#"
+            ><h5 class="poppins-light me-4"><b>Thực đơn</b></h5></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><h5 class="poppins-light me-4"><b>Đặt bàn</b></h5></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><h5 class="poppins-light me-4"><b>Khuyến mãi</b></h5></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><h5 class="poppins-light me-4"><b>Chia sẻ bí quyết</b></h5></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><h5 class="poppins-light"><b>Tham quan nhà hàng</b></h5></a
+          >
+        </li>
+      </ul>
       <div class="col-md-4 d-flex align-items-center">
         <iframe src="../images/svg/address.svg" width="30px" height="40px" class="me-2"></iframe>
         <p class="poppins-light me-2 no-margin"><b>Chọn khu vực giao hàng</b></p>
         <input class="cus-input me-2 poppins-light" placeholder="Tìm món ăn..." />
-        <img src="../images/png/cart.png" alt="cart" class="me-2" width="40px" height="40px" />
+        <button class="icon-button cart shopping-cart" data-totalitems="0" data-bs-target="#bookingModal" type="button" data-bs-toggle="modal">
+          <img src="../images/png/cart.png" alt="cart" width="40px" height="40px" />
+        </button>
         <img src="../images/png/user-profile.png" alt="user profile" width="40px" height="40px" />
       </div>
     </div>
@@ -446,11 +464,7 @@
                 <img src="../images/png/captcha.png" alt="captcha" width="100%" />
               </div>
               <div class="col-md-6 d-flex align-items-center justify-content-end">
-                <button
-                  type="button"
-                  class="btn text-uppercase order-btn primary-bg-color white-text"
-                  style="width: 300px; height: 50px"
-                >
+                <button type="button" class="btn text-uppercase order-btn primary-bg-color white-text" style="width: 300px; height: 50px">
                   <b>Đặt ngay</b>
                 </button>
               </div>
@@ -732,9 +746,9 @@
         <!-- start: combo col -->
         <div class="col-md-6" id="comboCol1">
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -755,7 +769,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -763,9 +777,9 @@
           </div>
           <!-- end: combo -->
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -783,7 +797,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -791,9 +805,9 @@
           </div>
           <!-- end: combo -->
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -811,7 +825,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -824,9 +838,9 @@
         <!-- start: combo col -->
         <div class="col-md-6" id="comboCol2">
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -847,7 +861,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -855,9 +869,9 @@
           </div>
           <!-- end: combo -->
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -875,7 +889,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -883,9 +897,9 @@
           </div>
           <!-- end: combo -->
           <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center">
+          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -903,7 +917,7 @@
                   <img src="../images/png/freeship-chip.png" width="100px" height="30" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
               </div>
@@ -1237,7 +1251,14 @@
     </footer>
     <!-- End: Footer -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
     <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../jquery/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"

@@ -23,6 +23,11 @@ function hideHeader(type) {
   headerClasslist.remove('is-visible');
   headerClasslist.add('is-hidden');
 }
+function showHeader(type) {
+  let headerClasslist = document.getElementById(type).classList;
+  headerClasslist.remove('is-hidden');
+  headerClasslist.add('is-visible');
+}
 
 function showDropdown() {
   document.getElementsByClassName('dropdown-content')[0].style.display = 'flex';
@@ -36,11 +41,6 @@ window.addEventListener('click', function (e) {
   }
 });
 
-function showHeader(type) {
-  let headerClasslist = document.getElementById(type).classList;
-  headerClasslist.remove('is-hidden');
-  headerClasslist.add('is-visible');
-}
 
 function copyToClipboard() {
   let copyText = document.getElementById('couponCode');
