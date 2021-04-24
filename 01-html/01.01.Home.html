@@ -68,155 +68,13 @@
               <div>
                 <button class="icon-button" data-bs-target="#bookingModal" type="button" data-bs-toggle="modal">
                   <img src="../images/png/cart.png" alt="cart" width="40px" height="40px" />
-                </button>
-                <!-- start: bookingModal -->
-                <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" style="display: flex !important; justify-content: center !important">
-                    <div class="modal-content desktop-width">
-                      <div class="modal-header gray-bg-color pt-5 px-5" style="border: none">
-                        <h4 class="poppins text-primary text-uppercase modal-title"><b>Nhập thông tin đặt hàng</b></h4>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body gray-bg-color px-5 mb-0" style="border: none">
-                        <div class="row">
-                          <div class="col-md-4">
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Tên"
-                                aria-label="Tên"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="fas fa-user large-text gray-text"></i>
-                              </span>
-                            </div>
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Chọn chi nhánh"
-                                aria-label="Chọn chi nhánh"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="fas fa-store large-text gray-text"></i>
-                              </span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Số điện thoại"
-                                aria-label="Số điện thoại"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="fas fa-mobile-alt large-text gray-text"></i>
-                              </span>
-                            </div>
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Số lượng khách"
-                                aria-label="Số lượng khách"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="fas fa-user-plus large-text gray-text"></i>
-                              </span>
-                            </div>
-                          </div>
-                          <div class="col-md-4">
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Email"
-                                aria-label="Email"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="fas fa-envelope large-text gray-text"></i>
-                              </span>
-                            </div>
-                            <div class="input-group mb-2 input-group-lg">
-                              <input
-                                type="text"
-                                class="form-control no-border-right"
-                                placeholder="Ngày đặt"
-                                aria-label="Ngày đặt"
-                                aria-describedby="basic-addon2"
-                              />
-                              <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
-                                <i class="far fa-calendar-alt large-text gray-text"></i>
-                              </span>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row my-3">
-                          <div class="col-3">
-                            <div class="form-check" style="width: fit-content">
-                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                              <label class="form-check-label text-primary poppins-light medium-text" for="flexCheckDefault">
-                                Đặt phòng VIP + 300k
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <div class="col-4">
-                            <div class="form-check" style="width: fit-content">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                              <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn gọi món </label>
-                            </div>
-                          </div>
-                          <div class="col-4">
-                            <div class="form-check" style="width: fit-content">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                              <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn buffet </label>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="row mb-3">
-                          <p class="poppins small-text no-margin text-start">
-                            <i>Nếu quý khách có bất kỳ câu hỏi hoặc yêu cầu liên quan đến việc đặt chỗ:</i>
-                          </p>
-                          <div class="input-group">
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="modal-footer gray-bg-color justify-content-between align-items-center px-5 pb-3" style="border: none">
-                        <div class="row">
-                          <div class="col-md-6">
-                            <img src="../images/png/captcha.png" alt="captcha" width="100%" />
-                          </div>
-                          <div class="col-md-6 d-flex align-items-center justify-content-end">
-                            <button
-                              type="button"
-                              class="btn text-uppercase order-btn primary-bg-color white-text"
-                              style="width: 300px; height: 50px"
-                            >
-                              <b>Đặt ngay</b>
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- end: bookingModal -->
+                </button>               
               </div>
               <div class="d-flex align-items-center ms-3">
                 <h6 class="poppins text-primary no-margin large-text">9,999,000</h6>
               </div>
               <!-- start: dropdown -->
-              <div class="ms-3 dropdown">
+              <div class="ms-3 dropdown" onmouseover="showDropdown()">
                 <img class="dropdown" src="../images/png/user-profile.png" alt="user profile" width="40px" height="40px" />
                 <div id="userDropdown" class="dropdown-content">
                   <button
@@ -242,161 +100,6 @@
                   </p>
                 </div>
               </div>
-              <!-- start: registerModal -->
-              <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog d-flex justify-content-center">
-                  <div class="modal-content desktop-width">
-                    <div class="modal-header gray-bg-color">
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body gray-bg-color">
-                      <div class="container-fluid">
-                        <div class="row">
-                          <!-- start: col 1 -->
-                          <div class="white-bg-color col-md-5 px-5 py-3 text-start">
-                            <h2 class="poppins text-primary"><b>Đăng nhập</b></h2>
-                            <p class="poppins small-text no-margin text-justify">
-                              Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn
-                            </p>
-                            <div style="height: 250px" class="d-flex justify-content-center align-items-center">
-                              <img src="../images/png/full-logo-2.png" alt="Full Logo" />
-                            </div>
-                          </div>
-                          <!-- end: col 1 -->
-                          <div class="gray-bg-color col-md-1"></div>
-                          <!-- start: col 2 -->
-                          <div class="white-bg-color col-md-6 text-start">
-                            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                              <li class="nav-item" role="presentation">
-                                <button
-                                  class="nav-link active"
-                                  id="home-tab"
-                                  data-bs-toggle="tab"
-                                  data-bs-target="#home"
-                                  type="button"
-                                  role="tab"
-                                  aria-controls="home"
-                                  aria-selected="true"
-                                >
-                                  Đăng nhập
-                                </button>
-                              </li>
-                              <li class="nav-item" role="presentation">
-                                <button
-                                  class="nav-link"
-                                  id="profile-tab"
-                                  data-bs-toggle="tab"
-                                  data-bs-target="#profile"
-                                  type="button"
-                                  role="tab"
-                                  aria-controls="profile"
-                                  aria-selected="false"
-                                >
-                                  Đăng ký
-                                </button>
-                              </li>
-                            </ul>
-                            <div class="tab-content" id="myTabContent">
-                              <!-- start: login -->
-                              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                <!-- start: email -->
-                                <div class="input-group mt-4 mb-3">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Email"
-                                  />
-                                </div>
-                                <!-- end: email -->
-                                <!-- start: password -->
-                                <div class="input-group mb-2">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Mật khẩu"
-                                  />
-                                </div>
-                                <!-- end: password -->
-                                <p class="poppins small-text">
-                                  <i
-                                    >Quên mật khẩu? Nhấn vào
-                                    <a href="#!" style="text-decoration: none; color: rgb(86, 190, 250)">đây</a>
-                                  </i>
-                                </p>
-                                <div class="d-grid gap-2">
-                                  <button class="btn btn-warning" type="button">Đăng nhập</button>
-                                  <button class="btn facebook-bg-color btn-sm white-text" type="button">Facebook</button>
-                                  <button class="btn google-bg-color btn-sm white-text" type="button">Google</button>
-                                </div>
-                              </div>
-                              <!-- end: login -->
-
-                              <!-- start: sign up -->
-                              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <!-- start: Tên -->
-                                <div class="input-group mt-4 mb-3">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Tên"
-                                  />
-                                </div>
-                                <!-- end: Tên -->
-                                <!-- start: email -->
-                                <div class="input-group mb-2">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Email"
-                                  />
-                                </div>
-                                <!-- end: email -->
-                                <!-- start: Mật khẩu -->
-                                <div class="input-group mb-2">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Mật khẩu"
-                                  />
-                                </div>
-                                <!-- end: Mật khẩu -->
-                                <!-- start: Xác nhận mật khẩu -->
-                                <div class="input-group mb-2">
-                                  <input
-                                    type="text"
-                                    class="form-control"
-                                    aria-label="Sizing example input"
-                                    aria-describedby="inputGroup-sizing-default"
-                                    placeholder="Xác nhận mật khẩu"
-                                  />
-                                </div>
-                                <!-- end: Xác nhận mật khẩu -->
-                                <div class="d-grid gap-2">
-                                  <button class="btn btn-warning" type="button">Đăng ký</button>
-                                </div>
-                              </div>
-                              <!-- end: sign up -->
-                            </div>
-                          </div>
-                          <!-- end: col 2 -->
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer gray-bg-color"></div>
-                  </div>
-                </div>
-              </div>
-              <!-- end: registerModal -->
               <!-- end: dropdown -->
             </div>
           </div>
@@ -418,11 +121,11 @@
               Chọn khu vực giao hàng
             </button>
           </li>
-          <li class="navigate-item black-text poppins-light" href="../03-html/03.01.Product-detail.html">Thực đơn</li>
-          <li class="navigate-item black-text poppins-light" href="#!">Đặt bàn</li>
-          <li class="navigate-item black-text poppins-light" href="#!">Khuyến mãi</li>
-          <li class="navigate-item black-text poppins-light" href="#!">Chia sẻ bí quyết</li>
-          <li class="navigate-item black-text poppins-light" href="#!">Tham quan nhà hàng</li>
+          <li><a class="navigate-item black-text poppins-light" href="../03-html/03.01.Product-detail.html">Thực đơn</a></li>
+          <li><a class="navigate-item black-text poppins-light" href="#!">Đặt bàn</a></li>
+          <li><a class="navigate-item black-text poppins-light" href="#!">Khuyến mãi</a></li>
+          <li><a class="navigate-item black-text poppins-light" href="#!">Chia sẻ bí quyết</a></li>
+          <li><a class="navigate-item black-text poppins-light" href="#!">Tham quan nhà hàng</a></li>
         </ul>
       </div>
       <!-- End: Search box + menu -->
@@ -458,6 +161,305 @@
       </div>
     </div>
     <!-- end: simplified header -->
+
+    <!-- start: registerModal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog d-flex justify-content-center">
+        <div class="modal-content desktop-width">
+          <div class="modal-header gray-bg-color">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body gray-bg-color">
+            <div class="container-fluid">
+              <div class="row">
+                <!-- start: col 1 -->
+                <div class="white-bg-color col-md-5 px-5 py-3 text-start">
+                  <h2 class="poppins text-primary"><b>Đăng nhập</b></h2>
+                  <p class="poppins small-text no-margin text-justify">
+                    Đăng nhập để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, nhận nhiều ưu đãi hấp dẫn
+                  </p>
+                  <div style="height: 250px" class="d-flex justify-content-center align-items-center">
+                    <img src="../images/png/full-logo-2.png" alt="Full Logo" />
+                  </div>
+                </div>
+                <!-- end: col 1 -->
+                <div class="gray-bg-color col-md-1"></div>
+                <!-- start: col 2 -->
+                <div class="white-bg-color col-md-6 text-start">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="home-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#home"
+                        type="button"
+                        role="tab"
+                        aria-controls="home"
+                        aria-selected="true"
+                      >
+                        Đăng nhập
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="profile-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="profile"
+                        aria-selected="false"
+                      >
+                        Đăng ký
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <!-- start: login -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                      <!-- start: email -->
+                      <div class="input-group mt-4 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <!-- end: email -->
+                      <!-- start: password -->
+                      <div class="input-group mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Mật khẩu"
+                        />
+                      </div>
+                      <!-- end: password -->
+                      <p class="poppins small-text">
+                        <i
+                          >Quên mật khẩu? Nhấn vào
+                          <a href="#!" style="text-decoration: none; color: rgb(86, 190, 250)">đây</a>
+                        </i>
+                      </p>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-warning" type="button">Đăng nhập</button>
+                        <button class="btn facebook-bg-color btn-sm white-text" type="button">Facebook</button>
+                        <button class="btn google-bg-color btn-sm white-text" type="button">Google</button>
+                      </div>
+                    </div>
+                    <!-- end: login -->
+
+                    <!-- start: sign up -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <!-- start: Tên -->
+                      <div class="input-group mt-4 mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Tên"
+                        />
+                      </div>
+                      <!-- end: Tên -->
+                      <!-- start: email -->
+                      <div class="input-group mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <!-- end: email -->
+                      <!-- start: Mật khẩu -->
+                      <div class="input-group mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Mật khẩu"
+                        />
+                      </div>
+                      <!-- end: Mật khẩu -->
+                      <!-- start: Xác nhận mật khẩu -->
+                      <div class="input-group mb-2">
+                        <input
+                          type="text"
+                          class="form-control"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default"
+                          placeholder="Xác nhận mật khẩu"
+                        />
+                      </div>
+                      <!-- end: Xác nhận mật khẩu -->
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-warning" type="button">Đăng ký</button>
+                      </div>
+                    </div>
+                    <!-- end: sign up -->
+                  </div>
+                </div>
+                <!-- end: col 2 -->
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer gray-bg-color"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end: registerModal -->
+
+    <!-- start: bookingModal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" style="display: flex !important; justify-content: center !important">
+        <div class="modal-content desktop-width">
+          <div class="modal-header gray-bg-color pt-5 px-5" style="border: none">
+            <h4 class="poppins text-primary text-uppercase modal-title"><b>Nhập thông tin đặt hàng</b></h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body gray-bg-color px-5 mb-0" style="border: none">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Tên"
+                    aria-label="Tên"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="fas fa-user large-text gray-text"></i>
+                  </span>
+                </div>
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Chọn chi nhánh"
+                    aria-label="Chọn chi nhánh"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="fas fa-store large-text gray-text"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Số điện thoại"
+                    aria-label="Số điện thoại"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="fas fa-mobile-alt large-text gray-text"></i>
+                  </span>
+                </div>
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Số lượng khách"
+                    aria-label="Số lượng khách"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="fas fa-user-plus large-text gray-text"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Email"
+                    aria-label="Email"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="fas fa-envelope large-text gray-text"></i>
+                  </span>
+                </div>
+                <div class="input-group mb-2 input-group-lg">
+                  <input
+                    type="text"
+                    class="form-control no-border-right"
+                    placeholder="Ngày đặt"
+                    aria-label="Ngày đặt"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text no-border-left white-bg-color" id="basic-addon2">
+                    <i class="far fa-calendar-alt large-text gray-text"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row my-3">
+              <div class="col-3">
+                <div class="form-check" style="width: fit-content">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label text-primary poppins-light medium-text" for="flexCheckDefault">
+                    Đặt phòng VIP + 300k
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-4">
+                <div class="form-check" style="width: fit-content">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                  <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn gọi món </label>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="form-check" style="width: fit-content">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                  <label class="form-check-label medium-text" for="flexRadioDefault1"> Khách đặt bàn buffet </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <p class="poppins small-text no-margin text-start">
+                <i>Nếu quý khách có bất kỳ câu hỏi hoặc yêu cầu liên quan đến việc đặt chỗ:</i>
+              </p>
+              <div class="input-group">
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer gray-bg-color justify-content-between align-items-center px-5 pb-3" style="border: none">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="../images/png/captcha.png" alt="captcha" width="100%" />
+              </div>
+              <div class="col-md-6 d-flex align-items-center justify-content-end">
+                <button
+                  type="button"
+                  class="btn text-uppercase order-btn primary-bg-color white-text"
+                  style="width: 300px; height: 50px"
+                >
+                  <b>Đặt ngay</b>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end: bookingModal -->
 
     <!-- start: areaModal -->
     <div class="modal fade" id="areaModal" tabindex="-1" aria-labelledby="areaLabel" aria-hidden="true">
@@ -1197,12 +1199,24 @@
             <li><p class="poppins-light small-text no-margin">ĐT: 0283 6203862. Email: cskh@vuacua.vn </p></li>
           </ul>
           <ul class="col-md-3 white-text">
-            <li><p class="poppins-light small-text no-margin">Về Vua Cua</p></li>
-            <li><p class="poppins-light small-text no-margin">Chính sách và quy định chung</p></li>
-            <li><p class="poppins-light small-text no-margin">Hướng dẫn đặt hàng</p></li>
-            <li><p class="poppins-light small-text no-margin">Giao hàng - Thanh toán</p></li>
-            <li><p class="poppins-light small-text no-margin">Khiếu nại & giải quyết khiếu nại</p></li>
-            <li><p class="poppins-light small-text no-margin">Bảo mật</p></li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Về Vua Cua</p></a>
+            </li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Chính sách và quy định chung</p></a>
+            </li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Hướng dẫn đặt hàng</p></a>
+            </li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Giao hàng - Thanh toán</p></a>
+            </li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Khiếu nại & giải quyết khiếu nại</p></a>
+            </li>
+            <li>
+              <a href="#!"><p class="white-text poppins-light small-text no-margin">Bảo mật</p></a>
+            </li>
           </ul>
           <div class="col-md-3 my-3 mx-0">
             <img src="../images/png/bocongthuong.png" alt="bo cong thuong" />

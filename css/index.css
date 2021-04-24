@@ -169,16 +169,21 @@
 #mainHeader,
 #simplifiedHeader {
   left: 0;
-  position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
   padding: 10px 0;
   background-color: white;
 }
 
 #simplifiedHeader {
   opacity: 0;
+  position: fixed;
+  z-index: 50;
+}
+
+#mainHeader {
+  position: sticky;
+  z-index: 100;
 }
 
 .is-hidden {
@@ -315,22 +320,17 @@ ul {
   box-shadow: 3px 3px 5px #d8d8d8;
   z-index: 1;
   padding: 10px 15px;
-  animation: growDown 300ms ease-in-out forwards;
-  -webkit-animation: growDown 350ms ease-in-out forwards;
+  animation: growDown 200ms ease-in-out forwards;
+  -webkit-animation: growDown 200ms ease-in-out forwards;
   transform-origin: top center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropdown {
   display: block;
   cursor: pointer;
-}
-
-.dropdown:hover .dropdown-content {
-  margin-top: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes growDown {
@@ -385,10 +385,6 @@ ul {
 
 .icon-button {
   background: none;
-  /* padding: 0;
-  margin: 0;
-  width: fit-content;
-  height: fit-content; */
   border: none;
 }
 

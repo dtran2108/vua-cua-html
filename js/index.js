@@ -1,3 +1,4 @@
+// hide and show header on scroll
 var previousScroll = 0;
 document.addEventListener('scroll', function (e) {
   var currentScroll = document.documentElement.scrollTop;
@@ -15,12 +16,25 @@ document.addEventListener('scroll', function (e) {
     previousScroll = currentScroll;
   }
 });
+// hide and show header on scroll
 
 function hideHeader(type) {
   let headerClasslist = document.getElementById(type).classList;
   headerClasslist.remove('is-visible');
   headerClasslist.add('is-hidden');
 }
+
+function showDropdown() {
+  document.getElementsByClassName('dropdown-content')[0].style.display = 'flex';
+}
+
+// hide dropdown on click outside
+window.addEventListener('click', function (e) {
+  var dropdownContent = document.getElementsByClassName('dropdown-content')[0];
+  if (!dropdownContent.contains(e.target)) {
+    dropdownContent.style.display = 'none';
+  }
+});
 
 function showHeader(type) {
   let headerClasslist = document.getElementById(type).classList;
