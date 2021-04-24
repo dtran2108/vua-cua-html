@@ -166,6 +166,49 @@
 }
 /* end: Background color */
 
+#mainHeader,
+#simplifiedHeader {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: white;
+}
+
+#simplifiedHeader {
+  opacity: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transform: translate(0, -60px);
+  -webkit-transform: translate(0, -60px);
+  -moz-transform: translate(0, -60px);
+  -ms-transform: translate(0, -60px);
+  -o-transform: translate(0, -60px);
+}
+
+.is-visible {
+  opacity: 1!important;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+}
+
 .learn-more-btn {
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -342,10 +385,10 @@ ul {
 
 .icon-button {
   background: none;
-  padding: 0;
+  /* padding: 0;
   margin: 0;
   width: fit-content;
-  height: fit-content;
+  height: fit-content; */
   border: none;
 }
 
@@ -574,12 +617,12 @@ a:hover {
 }
 
 #chiNhanhBg {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.1Fs ease-in-out;
   cursor: pointer;
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -ms-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1Fs ease-in-out;
+  -moz-transition: all 0.1Fs ease-in-out;
+  -ms-transition: all 0.1Fs ease-in-out;
+  -o-transition: all 0.1Fs ease-in-out;
 }
 
 .stepOneButton,
