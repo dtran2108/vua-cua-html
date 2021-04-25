@@ -361,6 +361,11 @@ ul {
   }
 }
 
+.main-cart,
+.cart {
+  position: relative;
+}
+
 .main-cart::before,
 .cart::before {
   content:attr(data-totalitems);
@@ -375,21 +380,8 @@ ul {
   color:white;
   text-align:center;
   border-radius:24px;
-}
-
-.main-cart::before {
-  top: 65px;
-  right: 400px
-}
-
-.cart::before {
-  top: 35px;
-  right: 105px;
-}
-
-.cart.shake {
-  animation: shakeCart .4s ease-in-out forwards;
-  -webkit-animation: shakeCart .4s ease-in-out forwards;
+  top: -8px;
+  right: 0px;
 }
 
 @keyframes shakeCart {
