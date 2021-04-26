@@ -188,11 +188,11 @@
 
 .is-hidden {
   opacity: 0;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transform: translate(0, -60px);
   -webkit-transform: translate(0, -60px);
   -moz-transform: translate(0, -60px);
@@ -201,12 +201,12 @@
 }
 
 .is-visible {
-  opacity: 1!important;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  opacity: 1 !important;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transform: translate(0, 0);
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -366,40 +366,69 @@ ul {
   position: relative;
 }
 
+#paymentModal {
+  position: absolute;
+  top: 180vh;
+  width: 300px;
+  max-width: 300px;
+  left: calc(60vw - 300px);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  z-index: 100;
+}
+
+#dark-overlay {
+  height: 10000vh;
+  position: absolute;
+  width: 100000vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
 .main-cart::before,
 .cart::before {
-  content:attr(data-totalitems);
-  font-size:12px;
-  font-weight:600;
-  position:absolute;
-  background:var(--green);
-  line-height:24px;
-  padding:0 5px;
-  height:24px;
-  min-width:24px;
-  color:white;
-  text-align:center;
-  border-radius:24px;
+  content: attr(data-totalitems);
+  font-size: 12px;
+  font-weight: 600;
+  position: absolute;
+  background: var(--green);
+  line-height: 24px;
+  padding: 0 5px;
+  height: 24px;
+  min-width: 24px;
+  color: white;
+  text-align: center;
+  border-radius: 24px;
   top: -8px;
   right: 0px;
 }
 
 @keyframes shakeCart {
   25% {
-    transform:translateX(6px);
-    -webkit-transform:translateX(6px);
-    -moz-transform:translateX(6px);
-    -ms-transform:translateX(6px);
-    -o-transform:translateX(6px);
-}
+    transform: translateX(6px);
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    -o-transform: translateX(6px);
+  }
   50% {
-    transform:translateX(-4px);
+    transform: translateX(-4px);
   }
   75% {
-    transform:translateX(2px);
+    transform: translateX(2px);
   }
   100% {
-    transform:translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -480,6 +509,7 @@ a:hover {
 .img-wrap {
   max-width: fit-content;
   margin-right: 0;
+  z-index: -2;
 }
 
 .chip {
@@ -655,12 +685,12 @@ a:hover {
 }
 
 #chiNhanhBg {
-  transition: all 0.1Fs ease-in-out;
+  transition: all 0.1fs ease-in-out;
   cursor: pointer;
-  -webkit-transition: all 0.1Fs ease-in-out;
-  -moz-transition: all 0.1Fs ease-in-out;
-  -ms-transition: all 0.1Fs ease-in-out;
-  -o-transition: all 0.1Fs ease-in-out;
+  -webkit-transition: all 0.1fs ease-in-out;
+  -moz-transition: all 0.1fs ease-in-out;
+  -ms-transition: all 0.1fs ease-in-out;
+  -o-transition: all 0.1fs ease-in-out;
 }
 
 .stepOneButton,

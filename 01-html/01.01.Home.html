@@ -17,6 +17,7 @@
     <title>01.01.Home</title>
   </head>
   <body>
+    <div id="dark-overlay"></div>
     <!-- Start: Main Header -->
     <header id="mainHeader">
       <!-- Start: Phone + logo + search box -->
@@ -172,7 +173,13 @@
         <iframe src="../images/svg/address.svg" width="30px" height="40px" class="me-2"></iframe>
         <p class="poppins-light me-2 no-margin"><b>Chọn khu vực giao hàng</b></p>
         <input class="cus-input me-2 poppins-light" placeholder="Tìm món ăn..." />
-        <button class="icon-button cart shopping-cart" data-totalitems="0" data-bs-target="#bookingModal" type="button" data-bs-toggle="modal">
+        <button
+          class="icon-button cart shopping-cart"
+          data-totalitems="0"
+          data-bs-target="#bookingModal"
+          type="button"
+          data-bs-toggle="modal"
+        >
           <img src="../images/png/cart.png" alt="cart" width="40px" height="40px" />
         </button>
         <img src="../images/png/user-profile.png" alt="user profile" width="40px" height="40px" />
@@ -748,7 +755,7 @@
           <!-- start: combo -->
           <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img style="z-index: -2;" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -765,13 +772,22 @@
               <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
               <div class="row mt-2">
                 <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
+                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                  <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
                   <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
+                <!-- start: thanh toan modal -->
+                <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                  <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                  <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                  <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                    <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
+                  </div>
+                </div>
+                <!-- end: thanh toan modal -->
               </div>
             </div>
           </div>
@@ -779,13 +795,16 @@
           <!-- start: combo -->
           <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img style="z-index: -2;" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
                 <div class="d-lg-flex flex-column align-items-end">
                   <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                  <p class="poppins-light black-text no-margin">
+                    <del>450,000</del>
+                  </p>
                 </div>
               </div>
               <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
@@ -793,45 +812,66 @@
               <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
               <div class="row mt-2">
                 <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
+                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                  <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
                   <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
+                <!-- start: thanh toan modal -->
+                <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                  <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                  <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                  <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                    <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
+                  </div>
+                </div>
+                <!-- end: thanh toan modal -->
               </div>
             </div>
           </div>
           <!-- end: combo -->
-          <!-- start: combo -->
-          <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
-            <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+         <!-- start: combo -->
+         <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
+          <div class="col me-2 img-wrap">
+            <img style="z-index: -2;" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+          </div>
+          <div class="col">
+            <div class="d-flex justify-content-between align-items-center flex-wrap">
+              <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
+              <div class="d-lg-flex flex-column align-items-end">
+                <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                <p class="poppins-light black-text no-margin">
+                  <del>450,000</del>
+                </p>
+              </div>
             </div>
-            <div class="col">
-              <div class="d-flex justify-content-between align-items-center flex-wrap">
-                <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
-                <div class="d-lg-flex flex-column align-items-end">
-                  <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+            <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
+            <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
+            <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
+            <div class="row mt-2">
+              <div class="col-12 col-sm-6 d-flex">
+                <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
+              </div>
+              <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
+                <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
+              </div>
+              <!-- start: thanh toan modal -->
+              <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                  <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
                 </div>
               </div>
-              <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
-              <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
-              <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
-              <div class="row mt-2">
-                <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
-                </div>
-                <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
-                  <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
-                  <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
-                </div>
-              </div>
+              <!-- end: thanh toan modal -->
             </div>
           </div>
-          <!-- end: combo -->
+        </div>
+        <!-- end: combo -->
         </div>
         <!-- end: combo col -->
 
@@ -840,7 +880,7 @@
           <!-- start: combo -->
           <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img style="z-index: -2;" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
@@ -857,13 +897,22 @@
               <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
               <div class="row mt-2">
                 <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
+                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                  <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
                   <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
+                <!-- start: thanh toan modal -->
+                <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                  <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                  <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                  <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                    <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
+                  </div>
+                </div>
+                <!-- end: thanh toan modal -->
               </div>
             </div>
           </div>
@@ -871,13 +920,16 @@
           <!-- start: combo -->
           <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img style="z-index: -2;" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
                 <div class="d-lg-flex flex-column align-items-end">
                   <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                  <p class="poppins-light black-text no-margin">
+                    <del>450,000</del>
+                  </p>
                 </div>
               </div>
               <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
@@ -885,13 +937,22 @@
               <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
               <div class="row mt-2">
                 <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
+                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                  <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
                   <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
+                <!-- start: thanh toan modal -->
+                <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                  <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                  <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                  <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                    <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
+                  </div>
+                </div>
+                <!-- end: thanh toan modal -->
               </div>
             </div>
           </div>
@@ -899,13 +960,16 @@
           <!-- start: combo -->
           <div class="row combo-wrap mb-5 me-1 d-flex align-items-center item">
             <div class="col me-2 img-wrap">
-              <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+              <img src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
             </div>
             <div class="col">
               <div class="d-flex justify-content-between align-items-center flex-wrap">
                 <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
                 <div class="d-lg-flex flex-column align-items-end">
                   <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                  <p class="poppins-light black-text no-margin">
+                    <del>450,000</del>
+                  </p>
                 </div>
               </div>
               <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
@@ -913,13 +977,22 @@
               <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
               <div class="row mt-2">
                 <div class="col-12 col-sm-6 d-flex">
-                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" />
-                  <img src="../images/png/freeship-chip.png" width="100px" height="30" />
+                  <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2;" />
+                  <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2;" />
                 </div>
                 <div class="col-12 col-sm-6 d-flex justify-content-end mt-2 mt-sm-0">
                   <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
                   <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
                 </div>
+                <!-- start: thanh toan modal -->
+                <div id="paymentModal" class="card px-0 pt-2 d-flex flex-column justify-content-center align-items-center">
+                  <img id="combo-img" src="../images/png/combo-crab.png" alt="combo crap" width="70px" height="70px" />
+                  <p class="poppins">Đã thêm vào <b>Giỏ hàng</b></p>
+                  <div class="card-footer d-flex justify-content-center align-items-center green-text w-100">
+                    <p class="poppins-light no-margin text-center">Bạn có thể xem và <b>THANH TOÁN</b> tại giỏ hàng</p>
+                  </div>
+                </div>
+                <!-- end: thanh toan modal -->
               </div>
             </div>
           </div>
