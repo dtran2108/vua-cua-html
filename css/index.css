@@ -382,9 +382,9 @@ ul {
 }
 
 #dark-overlay {
-  height: 10000vh;
+  height: 600vh;
   position: absolute;
-  width: 100000vw;
+  width: 100vw;
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
   opacity: 0;
