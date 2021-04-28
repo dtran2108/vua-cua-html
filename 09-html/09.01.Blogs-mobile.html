@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/solid.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/product-detail.css" />
+    <link rel="stylesheet" href="../css/blogs.css" />
+    <title>09.01.Blogs</title>
+  </head>
+  <body>
+    <!-- Start: simplified header -->
+    <nav id="simplifiedHeader" class="navbar navbar-dark yellow-bg-color d-block sticky-top" style="z-index: 110; opacity: 1!important;">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="fas fa-home white-text large-text"></i>&nbsp;
+          <button
+            style="font-family: 'Font Awesome 5 Free'; font-weight: 900;"
+            class="icon-button large-text white-text p-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileSidebar"
+            aria-controls="mobileSidebar"
+          >
+            &#xf0c9;
+          </button>
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" style="width: 190px" type="search" placeholder="Tìm món ăn" aria-label="Search" />
+          <a class="navbar-brand">
+            <i class="fas fa-map-marker-alt white-text"></i>
+            <i class="fas fa-cart-plus white-text"></i>
+          </a>
+        </form>
+      </div>
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>'; position: relative; top: 5px; height: 15px" aria-label="breadcrumb">
+          <ol class="breadcrumb poppins">
+            <li class="breadcrumb-item small-text">
+              <i class="fas fa-home white-text"></i>&nbsp;
+              <a href="#!" style="color: rgb(31, 164, 253) !important">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item small-text active black-text" aria-current="page">Thực đơn</li>
+          </ol>
+        </nav>
+      </div>
+    </nav>
+    <!-- end: simplified header -->
+
+    <!-- start: sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+      <div class="offcanvas-header">
+        <a href="#!" class="white-text"
+          ><h5 class="offcanvas-title d-flex align-items-center" id="mobileSidebarLabel">
+            <i class="far fa-user-circle large-text me-3"></i>
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <h5 class="poppins text-uppercase no-margin">Đăng nhập</h5>
+              <p class="poppins small-text no-margin">Để có trải nghiệm tốt hơn</p>
+            </div>
+            <i class="fas fa-chevron-right large-text" style="position: absolute; right: 16px"></i></h5
+        ></a>
+        <button
+          class="icon-button white-text large-text sidebar-close-btn"
+          type="button"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="sidebar-menu">
+          <li><a href="#!">Thực đơn</a></li>
+          <li>
+            <a href="#!" class="d-flex justify-content-between align-items-center"><span>Đặt bàn</span> <i class="far fa-calendar-alt large-text"></i></a>
+          </li>
+          <li><a href="#!">Khuyến mãi</a></li>
+          <li><a href="#!">Blogs</a></li>
+          <li><a href="#!">Tham quan nhà hàng</a></li>
+        </ul>
+
+        <h1 class="poppins yellow-text" style="font-size: 48px"><b><i>1900 6333 87</i></b></h1>
+        <p class="poppins-light no-margin"><i class="fas fa-utensils"></i>&nbsp;Restaurant: <b class="poppins">9h-22h</b> T2 - Chủ Nhật</p>
+        <p class="poppins-light no-margin"><i class="fas fa-clock"></i></i>&nbsp;Delivery: <b class="poppins">9h-20h30</b> T2 - Chủ Nhật</p>
+      </div>
+    </div>
+    <!-- start: sidebar -->
+
+    <!-- end: mobile ad -->
+    <div class="d-lg-none d-block container">
+      <img src="../images/png/ad-horizon-banner.png" width="100%" class="my-2" />
+    </div>
+    <!-- end: mobile ad -->
+
+    <!-- end: mobile scroll menu -->
+    <div class="d-lg-none d-block container scrollmenu">
+      <a class="poppins" href="#!">Xu hướng</a>
+      <a class="poppins" href="#!">Khuyến mãi</a>
+      <a class="poppins" href="#!">Tips</a>
+      <a class="poppins" href="#!">Mô tả món</a>
+      <a class="poppins" href="#!">Văn hoá ẩm thực</a>
+      <a class="poppins" href="#!">Ăn gì ở đâu</a>
+      <a class="poppins" href="#!">An toàn thực phẩm</a>
+      <a class="poppins" href="#!">Các loại hải sản</a>
+      <a class="poppins" href="#!">Chế độ dinh dưỡng</a>
+    </div>
+    <!-- end: mobile scroll menu -->
+
+    <div class="container-lg mb-5">
+      <div class="row">
+        <!-- start: aside -->
+        <div class="col-lg-3 d-none d-lg-block">
+          <!-- start: Tìm bài viết -->
+          <div class="mb-4">
+            <input class="cus-input" placeholder="Tìm bài viết..." style="width: 100%" />
+          </div>
+          <!-- end: Tìm bài viết -->
+          <!-- start: accordion -->
+          <div class="accordion mb-4 poppins" id="accordionExample" style="box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.2)">
+            <div class="accordion-item">
+              <h2 class="accordion-header accordion-button accordion-no-btn white-bg-color gray-text" id="headingZero">
+                <i class="fas fa-list-ul black-text"></i>&nbsp; Danh mục bài viết
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button collapsed
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="false"
+                  aria-controls="collapseOne"
+                >
+                  Xu hướng &nbsp; <img src="../images/png/new-badge.png" width="30px" height="30px"/> 
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the
+                  appropriate classes that we use to style each element. These classes control the overall appearance, as well as the
+                  showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables.
+                  It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does
+                  limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Khuyến mãi &nbsp; <img src="../images/png/percent-badge.png" width="30px" height="30px"/>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Tips &nbsp; <img src="../images/png/light-badge.png" width="30px" height="30px"/>
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Mô tả món
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Văn hoá ẩm thực
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Ăn gì ở đâu
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  An toàn thực phẩm
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Các loại hải sản
+                </button>
+              </h2>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Chế độ dinh dưỡng
+                </button>
+              </h2>
+            </div>
+          </div>
+          <!-- end: accordion -->
+          <img src="../images/png/buffet-hai-san.png" width="100%" />
+        </div>
+        <!-- end: aside -->
+        <!-- start: content -->
+        <div class="col-lg-9">
+          <div class="container">
+            <!-- start: main content -->
+            <div class="row border-bottom pb-4">
+              <!-- start: left col -->
+              <div class="col-lg-8 pb-2 pb-lg-0">
+                <video width="100%" height="300rem" controls autoplay>
+                  <source src="../video/matchanah.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <h3 class="text-primary poppins my-1"><b>Hành trình tạo nên kiệt tác tại VUA CUA</b></h3>
+                <p class="poppins my-2">
+                  <i><b>Thg 12-09-2020</b></i>
+                </p>
+                <p class="poppins medium-text text-justify no-margin">
+                  Món cua từ lâu đã được xếp vào top đầu những món hải sản về độ ngon và sự hấp dẫn. Bằng bàn tay tài tình, những người đầu
+                  bếp đã khéo léo biến những chú cua to xác trở thành món ăn hấp dẫn không chỉ được rất nhiều người yêu thích, mà còn chinh
+                  phục cả những thực khách khó tính nhất.
+                </p>
+              </div>
+              <!-- end: left col -->
+              <!-- start: right col -->
+              <div class="col-lg-4">
+                <div class="container">
+                  <div class="mb-2">
+                    <div
+                      class="card-img"
+                      style="
+                        width: 100%;
+                        height: 150px;
+                        background-image: url('https://rasamalaysia.com/wp-content/uploads/2019/12/baked-crab-thumb.jpg');
+                        background-size: cover;
+                        background-position: center center;
+                      "
+                    ></div>
+                    <ul class="poppins-light medium-text me-0 my-1 ms-0">
+                      <li>Cách làm sốt tiêu xanh không phải ai cũng biết làm</li>
+                    </ul>
+                    <p class="poppins small-text no-margin gray-text">
+                      <i class="fas fa-eye"></i>
+                      1820
+                    </p>
+                  </div>
+                  <div class="mb-2">
+                    <div
+                      class="card-img"
+                      style="
+                        width: 100%;
+                        height: 150px;
+                        background-image: url('https://images.squarespace-cdn.com/content/v1/52d3fafee4b03c7eaedee15f/1546629618365-CHX0VCCJ54Z2X77DIC3F/ke17ZwdGBToddI8pDm48kA9rhCjhJUYcQpKsBaLXN1ZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIye_uGeP4isZUnhF2J4BSLX0iSmbQA7pLf20f1CNe8SkKMshLAGzx4R3EDFOm1kBS/fish%2Blemongrass-3.jpg?format=1500w');
+                        background-size: cover;
+                        background-position: center center;
+                      "
+                    ></div>
+                    <ul class="poppins-light medium-text me-0 my-1 ms-0">
+                      <li>Mẹo chiên cá không văng mọi bà mẹ trẻ nên biết</li>
+                    </ul>
+                    <p class="poppins small-text no-margin gray-text">
+                      <i class="fas fa-eye"></i>
+                      1820
+                    </p>
+                  </div>
+                  <ul class="poppins-light medium-text me-0 my-1 ms-0">
+                    <li>Cách làm sốt nướng phô ai "ai ăn cũng ghiền" ngay tại nhà</li>
+                    <li>Sĩ tử nên ăn thực phẩm gì mùa thi để tăng điểm số?</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- start: right col -->
+            </div>
+            <!-- end: main content -->
+            <!-- start: blog -->
+            <div class="row border-bottom py-4">
+              <div class="col-lg-4">
+                <div
+                  class="card-img"
+                  style="
+                    width: 100%;
+                    height: 230px;
+                    background-image: url('https://www.verywellfit.com/thmb/7C3qEc9GBXyvhJMedAg56AHN69Y=/1200x1200/smart/filters:no_upscale()/chicken-noodle-soup-g18-56a8c0ce5f9b58b7d0f4d15f.jpg');
+                    background-size: cover;
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="text-primary poppins my-1"><b>Bí quyết nấu xốt me chuẩn vị, ai ăn cũng ghiền!</b></h3>
+                <p class="poppins my-2">
+                  <i><b>Thg 12-09-2020</b></i>
+                </p>
+                <p class="poppins medium-text text-justify no-margin">
+                  Món cua từ lâu đã được xếp vào top đầu những món hải sản về độ ngon và sự hấp dẫn. Bằng bàn tay tài tình, những người đầu
+                  bếp đã khéo léo biến những chú cua to xác trở thành món ăn hấp dẫn không chỉ được rất nhiều người yêu thích, mà còn chinh
+                  phục cả những thực khách khó tính nhất.
+                </p>
+              </div>
+            </div>
+            <!-- end: blog -->
+            <!-- start: blog -->
+            <div class="row border-bottom py-4">
+              <div class="col-lg-4">
+                <div
+                  class="card-img"
+                  style="
+                    width: 100%;
+                    height: 230px;
+                    background-image: url('https://cdn.beptruong.edu.vn/wp-content/uploads/2018/01/danh-vay-ca-chep-600x381.jpg');
+                    background-size: cover;
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="text-primary poppins my-1"><b>Cách sơ chế cá sạch, tiết kiệm thời gian ngay tại nhà!</b></h3>
+                <p class="poppins my-2">
+                  <i><b>Thg 12-09-2020</b></i>
+                </p>
+                <p class="poppins medium-text text-justify no-margin">
+                  Món cua từ lâu đã được xếp vào top đầu những món hải sản về độ ngon và sự hấp dẫn. Bằng bàn tay tài tình, những người đầu
+                  bếp đã khéo léo biến những chú cua to xác trở thành món ăn hấp dẫn không chỉ được rất nhiều người yêu thích, mà còn chinh
+                  phục cả những thực khách khó tính nhất.
+                </p>
+              </div>
+            </div>
+            <!-- end: blog -->
+            <!-- start: blog -->
+            <div class="row border-bottom py-4">
+              <div class="col-lg-4">
+                <div
+                  class="card-img"
+                  style="
+                    width: 100%;
+                    height: 230px;
+                    background-image: url('https://pastaxi-manager.onepas.vn/content/uploads/articles/minhnguyet/cua-sot-ot/cach-lam-cua-sot-ot-singapore-1.jpg');
+                    background-size: cover;
+                    background-position: center center;
+                  "
+                ></div>
+              </div>
+              <div class="col-lg-8">
+                <h3 class="text-primary poppins my-1"><b>Bạn có biết? Cua Cà Mau đặc biệt ngon hơn khi chế biến cùng các loại sốt đa hương vị!</b></h3>
+                <p class="poppins my-2">
+                  <i><b>Thg 12-09-2020</b></i>
+                </p>
+                <p class="poppins medium-text text-justify no-margin">
+                  Món cua từ lâu đã được xếp vào top đầu những món hải sản về độ ngon và sự hấp dẫn. Bằng bàn tay tài tình, những người đầu
+                  bếp đã khéo léo biến những chú cua to xác trở thành món ăn hấp dẫn không chỉ được rất nhiều người yêu thích, mà còn chinh
+                  phục cả những thực khách khó tính nhất.
+                </p>
+              </div>
+            </div>
+            <!-- end: blog -->
+            <!-- start: trang tiep btn -->
+            <div class="row d-flex justify-content-end">
+              <button class="mt-3 learn-more-btn poppins">Trang tiếp >></button>
+            </div>
+            <!-- end: trang tiep btn -->
+          </div>
+        </div>
+        <!-- end: content -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
