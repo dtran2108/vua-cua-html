@@ -17,37 +17,81 @@
     <title>02.01.Menu</title>
   </head>
   <body>
-    <div class="d-none d-lg-block">
-      <!-- Start: header -->
-      <div class="row my-3 mx-5">
-        <div class="col-md-8 d-flex align-items-center">
-          <img src="../images/png/logo.png" alt="logo" class="me-4" />
-          <a href="#"
-            ><h5 class="poppins-light me-4"><b>Thực đơn</b></h5></a
+    <!-- Start: simplified header -->
+    <nav id="simplifiedHeader" class="navbar navbar-dark yellow-bg-color d-block sticky-top" style="z-index: 110; opacity: 1!important;">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="fas fa-home white-text large-text"></i>&nbsp;
+          <button
+            style="font-family: 'Font Awesome 5 Free'; font-weight: 900;"
+            class="icon-button large-text white-text"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileSidebar"
+            aria-controls="mobileSidebar"
           >
-          <a href="#"
-            ><h5 class="poppins-light me-4"><b>Đặt bàn</b></h5></a
-          >
-          <a href="#"
-            ><h5 class="poppins-light me-4"><b>Khuyến mãi</b></h5></a
-          >
-          <a href="#"
-            ><h5 class="poppins-light me-4"><b>Chia sẻ bí quyết</b></h5></a
-          >
-          <a href="#"
-            ><h5 class="poppins-light"><b>Tham quan nhà hàng</b></h5></a
-          >
-        </div>
-        <div class="col-md-4 d-flex align-items-center">
-          <iframe src="../images/svg/address.svg" width="30px" height="40px" class="me-2"></iframe>
-          <p class="poppins-light me-2 no-margin"><b>Chọn khu vực giao hàng</b></p>
-          <input class="cus-input mx-2 poppins-light" placeholder="Tìm món ăn..." />
-          <img src="../images/png/cart.png" alt="cart" class="me-2" width="40px" height="40px" />
-          <img src="../images/png/user-profile.png" alt="user profile" width="40px" height="40px" />
-        </div>
+            &#xf0c9;
+          </button>
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" style="width: 190px" type="search" placeholder="Tìm món ăn" aria-label="Search" />
+          <a class="navbar-brand">
+            <i class="fas fa-map-marker-alt white-text"></i>
+            <i class="fas fa-cart-plus white-text"></i>
+          </a>
+        </form>
       </div>
-      <!-- end: header -->
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>'; position: relative; top: 5px; height: 15px" aria-label="breadcrumb">
+          <ol class="breadcrumb poppins">
+            <li class="breadcrumb-item small-text">
+              <i class="fas fa-home white-text"></i>&nbsp;
+              <a href="#!" style="color: rgb(31, 164, 253) !important">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item small-text active black-text" aria-current="page">Thực đơn</li>
+          </ol>
+        </nav>
+      </div>
+    </nav>
+    <!-- end: simplified header -->
+
+    <!-- start: sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+      <div class="offcanvas-header">
+        <a href="#!" class="white-text"
+          ><h5 class="offcanvas-title d-flex align-items-center" id="mobileSidebarLabel">
+            <i class="far fa-user-circle large-text me-3"></i>
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <h5 class="poppins text-uppercase no-margin">Đăng nhập</h5>
+              <p class="poppins small-text no-margin">Để có trải nghiệm tốt hơn</p>
+            </div>
+            <i class="fas fa-chevron-right large-text" style="position: absolute; right: 16px"></i></h5
+        ></a>
+        <button
+          class="icon-button white-text large-text sidebar-close-btn"
+          type="button"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="sidebar-menu">
+          <li><a href="#!">Thực đơn</a></li>
+          <li>
+            <a href="#!" class="d-flex justify-content-between align-items-center"><span>Đặt bàn</span> <i class="far fa-calendar-alt large-text"></i></a>
+          </li>
+          <li><a href="#!">Khuyến mãi</a></li>
+          <li><a href="#!">Blogs</a></li>
+          <li><a href="#!">Tham quan nhà hàng</a></li>
+        </ul>
+
+        <h1 class="poppins yellow-text" style="font-size: 48px"><b><i>1900 6333 87</i></b></h1>
+        <p class="poppins-light no-margin"><i class="fas fa-utensils"></i>&nbsp;Restaurant: <b class="poppins">9h-22h</b> T2 - Chủ Nhật</p>
+        <p class="poppins-light no-margin"><i class="fas fa-clock"></i></i>&nbsp;Delivery: <b class="poppins">9h-20h30</b> T2 - Chủ Nhật</p>
+      </div>
     </div>
+    <!-- start: sidebar -->
 
     <!-- start: carousel banner -->
     <div id="carouselExampleSlidesOnly" class="carousel slide mt-2" data-bs-ride="carousel">
@@ -613,7 +657,7 @@
     </footer>
     <!-- End: Footer -->
 
-    <script type="text/javascript" src="../js/index.js"></script>
+    <!-- <script type="text/javascript" src="../js/index.js"></script> -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"

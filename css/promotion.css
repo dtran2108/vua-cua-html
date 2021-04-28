@@ -1,0 +1,11 @@
+.category-btn:hover li {
+  color: var(--primary-color)!important;
+}
+
+.category-btn li {
+  transition: all .1s ease-in-out;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+}
