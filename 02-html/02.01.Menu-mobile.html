@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
     <title>02.01.Menu</title>
   </head>
   <body>
@@ -24,7 +25,7 @@
           <i class="fas fa-home white-text large-text"></i>&nbsp;
           <button
             style="font-family: 'Font Awesome 5 Free'; font-weight: 900;"
-            class="icon-button large-text white-text"
+            class="icon-button large-text white-text p-0"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#mobileSidebar"
@@ -94,7 +95,7 @@
     <!-- start: sidebar -->
 
     <!-- start: carousel banner -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide mt-2" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="3000">
           <img src="../images/png/home-banner.png" class="d-block w-100" alt="..." />
@@ -123,97 +124,129 @@
     <!-- end: breadcrumbs -->
 
     <!-- Start: He thong vua cua -->
-    <div class="container-lg mt-5 pb-3 text-center">
-      <h1 class="poppins text-primary no-margin"><b>Vui lòng chọn hệ thống quý khách muốn xem thực đơn</b></h1>
+    <div class="container-lg mt-5 pb-3 text-center border-bot">
+      <h1 class="aachenb text-primary no-margin upper-text">Hệ thống vua cua</h1>
       <div class="row mt-2">
-        <!-- start: chain1 -->
-        <div class="col mx-2 mt-5 chain active">
-          <center>
-            <div class="chain-container">
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="img-chain" src="../images/png/chain1.png" alt="chain ex" />
-                <h2 class="aachenb text-primary no-margin chain-name">VCR</h2>
-              </div>
-              <h5 class="poppins no-margin"><b>Vua Cua Restaurant</b></h5>
-            </div>
-          </center>
+        <!-- start: carousel -->
+      <div id="historyDishedCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#historyDishedCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button type="button" data-bs-target="#historyDishedCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#historyDishedCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <!-- end: chain1 -->
-        <!-- start: chain2 -->
-        <div class="col mx-2 mt-5 chain">
-          <center>
-            <div class="chain-container">
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="img-chain" src="../images/png/chain2.png" alt="chain ex" />
-                <h2 class="aachenb text-primary no-margin chain-name">VCE</h2>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <!-- start: chain1 -->
+              <div class="col mx-2 my-5 chain active">
+                <center>
+                  <div class="chain-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="img-chain" src="../images/png/chain1.png" alt="chain ex" />
+                      <h2 class="aachenb text-primary no-margin chain-name">VCR</h2>
+                    </div>
+                    <h5 class="poppins no-margin"><b>Vua Cua Restaurant</b></h5>
+                  </div>
+                </center>
+                <p class="description-text no-margin text-center mt-3 poppins">Hệ thống nhà hàng<br />Cua Cà Mau & hải sản</p>
+                <button class="mt-3 learn-more-btn poppins">Tìm hiểu thêm >></button>
               </div>
-              <h5 class="p oppins no-margin"><b>Vua Cua Express</b></h5>
+              <!-- end: chain1 -->
             </div>
-          </center>
-        </div>
-        <!-- end: chain2 -->
-        <!-- start: chain3 -->
-        <div class="col mx-2 mt-5 chain">
-          <center>
-            <div class="chain-container">
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="img-chain" src="../images/png/chain3.png" alt="chain ex" />
-                <h2 class="aachenb text-primary no-margin chain-name">VCF</h2>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <!-- start: chain2 -->
+              <div class="col mx-2 my-5 chain active">
+                <center>
+                  <div class="chain-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="img-chain" src="../images/png/chain2.png" alt="chain ex" />
+                      <h2 class="aachenb text-primary no-margin chain-name">VCE</h2>
+                    </div>
+                    <h5 class="p oppins no-margin"><b>Vua Cua Express</b></h5>
+                  </div>
+                </center>
+                <p class="description-text no-margin text-center mt-3 poppins">Hệ thống cửa hàng <br />chuyên takeaway & delivery</p>
+                <button class="mt-3 learn-more-btn poppins">Tìm hiểu thêm >></button>
               </div>
-              <h5 class="poppins no-margin"><b>Vua Cua Food</b></h5>
+              <!-- end: chain2 -->
             </div>
-          </center>
-        </div>
-        <!-- end: chain3 -->
-        <!-- start: chain -->
-        <div class="col mx-2 mt-5 chain">
-          <center>
-            <div class="chain-container">
-              <div class="d-flex justify-content-between align-items-center">
-                <img class="img-chain" src="../images/png/chain4.png" alt="chain ex" />
-                <h2 class="aachenb text-primary no-margin chain-name">VCB</h2>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <!-- start: chain3 -->
+              <div class="col mx-2 my-5 chain active">
+                <center>
+                  <div class="chain-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="img-chain" src="../images/png/chain3.png" alt="chain ex" />
+                      <h2 class="aachenb text-primary no-margin chain-name">VCF</h2>
+                    </div>
+                    <h5 class="poppins no-margin"><b>Vua Cua Food</b></h5>
+                  </div>
+                </center>
+                <p class="description-text no-margin text-center mt-3 poppins">Thương hiệu thực phẩm<br />tươi ngon - an toàn - tiện lợi</p>
+                <button class="mt-3 learn-more-btn poppins">Tìm hiểu thêm >></button>
               </div>
-              <h5 class="poppins no-margin"><b>Vua Cua Bike</b></h5>
+              <!-- end: chain3 -->
             </div>
-          </center>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <!-- start: chain4 -->
+              <div class="col mx-2 my-5 chain active">
+                <center>
+                  <div class="chain-container">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <img class="img-chain" src="../images/png/chain4.png" alt="chain ex" />
+                      <h2 class="aachenb text-primary no-margin chain-name">VCB</h2>
+                    </div>
+                    <h5 class="poppins no-margin"><b>Vua Cua Bike</b></h5>
+                  </div>
+                </center>
+                <p class="description-text no-margin text-center mt-3 poppins">
+                  Xe bán cua di động mang<br />
+                  Vua Cua đến gần với bạn hơn!
+                </p>
+                <button class="mt-3 learn-more-btn poppins">Tìm hiểu thêm >></button>
+              </div>
+              <!-- end: chain4 -->
+            </div>
+          </div>
         </div>
-        <!-- end: chain4 -->
+        <button class="carousel-control-prev text-primary" type="button" data-bs-target="#historyDishedCarousel" data-bs-slide="prev" style="left: 0px; top: -40px">
+          <i class="fas fa-chevron-left text-primary large-text" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#historyDishedCarousel" data-bs-slide="next" style="right: 0px; top: -40px">
+          <i class="fas fa-chevron-right text-primary large-text" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end: carousel -->
       </div>
     </div>
     <!-- End: He thong vua cua -->
 
     <!-- start: Tim mon an -->
     <div class="container-lg">
-      <div class="input-group mb-3">
-        <span
-          style="border-top-left-radius: 10px; border-bottom-left-radius: 10px"
-          class="input-group-text white-bg-color no-border-right"
-          id="basic-addon1"
-          ><i class="fas fa-search gray-text"></i
-        ></span>
-        <input
-          type="text"
-          class="form-control poppins-light no-border-right no-border-left"
-          placeholder="Tìm món ăn..."
-          aria-label="Recipient's username"
-          aria-describedby="basic-addon2"
-        />
-        <span class="poppins input-group-text white-bg-color no-border-left no-border-right" id="basic-addon2"
-          ><a href="#" class="text-primary">Combo</a></span
-        >
-        <span class="poppins input-group-text white-bg-color no-border-left no-border-right" id="basic-addon2"
-          ><a href="#">Vua Cua food</a></span
-        >
-        <span class="poppins input-group-text white-bg-color no-border-left no-border-right" id="basic-addon2"
-          ><a href="#">Cua Cà Mau</a></span
-        >
-        <span class="poppins input-group-text white-bg-color no-border-left no-border-right" id="basic-addon2"
-          ><a href="#">Hải Sản</a></span
-        >
-        <span class="poppins input-group-text white-bg-color no-border-left no-border-right" id="basic-addon2"
-          ><a href="#">Ngao Sò Ốc</a></span
-        >
-        <span style="border-top-right-radius: 10px; border-bottom-right-radius: 10px" class="poppins input-group-text white-bg-color no-border-left" id="basic-addon2"><a href="#">Thức Uống, Trái Cây</a></span>
+      <div class="mb-3">
+        <div class="col-md-8 text-end scrollmenu">
+          <a class="poppins menu-item-wrap" href="#!">Combo</a>
+          <a class="poppins menu-item-wrap" href="#!">Vua Cua Food</a>
+          <a class="poppins menu-item-wrap" href="#!">Cua Cà Mau</a>
+          <a class="poppins menu-item-wrap" href="#!">Hải Sản</a>
+          <a class="poppins menu-item-wrap" href="#!">Ngao Sò ỐC</a>
+          <a class="poppins menu-item-wrap" href="#!">Thức Uống, Trái Cây</a>
+        </div>
       </div>
     </div>
     <!-- end: Tim mon an -->
@@ -583,9 +616,9 @@
 
     <!-- Start: Dang ky khuyen mai -->
     <div class="py-5 secondary-bg-color">
-      <div class="row d-flex justify-content-center">
-        <center class="col-md-2"><img src="../images/png/full-logo.png" alt="full logo" width="200px" height="220px" /></center>
-        <div class="col-md-5 red-divider d-flex flex-column justify-content-center align-items-center">
+      <div class="row d-flex justify-content-center px-2 no-margin align-items-center" style="max-width: 100vw">
+        <center class="col-12 no-padding"><img src="../images/png/full-logo.png" alt="full logo" width="200px" height="220px" /></center>
+        <div class="col-12 no-padding red-divider d-flex flex-column justify-content-center align-items-center">
           <h5 class="poppins text-primary no-margin text-center pb-3">Để lại địa chỉ email<br />để đăng ký nhận khuyến mãi nhé!</h5>
           <center>
             <div class="input-group">
@@ -595,13 +628,13 @@
                 placeholder="Nhập địa chỉ email của bạn"
                 aria-label="email"
                 aria-describedby="basic-addon2"
-                style="width: 350px"
+                style="width: 200px"
               />
               <span id="basic-addon2"><button class="register-btn">Đăng ký</button></span>
             </div>
           </center>
         </div>
-        <div class="col-md-4 mt-md-0 mt-2 d-flex flex-column justify-content-center align-items-center">
+        <div class="col-12 no-padding mt-2 d-flex flex-column justify-content-center align-items-center">
           <center>
             <h5 class="poppins no-margin"><b>Vua Cua đang ở rất gần bạn đấy!</b></h5>
           </center>
