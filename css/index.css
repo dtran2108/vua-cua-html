@@ -538,6 +538,17 @@ a:hover {
   top: 10rem;
 }
 
+.place-order {
+  background-color: white;
+  border-top: 1px solid #000;
+  z-index: 100;
+}
+
+.sticky-bottom {
+  position: sticky;
+  bottom: 0;
+}
+
 .dark-overlay {
   background-color: rgba(0, 0, 0, 0.3);
 }

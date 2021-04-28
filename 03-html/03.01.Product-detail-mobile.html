@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
+    <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/mobile.css" />
+    <link rel="stylesheet" href="../css/product-detail.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+    <title>03.01.Product-detail</title>
+  </head>
+  <body>
+    <!-- Start: simplified header -->
+    <nav id="simplifiedHeader" class="navbar navbar-dark yellow-bg-color d-block sticky-top" style="z-index: 110; opacity: 1!important;">
+      <div class="container-fluid">
+        <a class="navbar-brand">
+          <i class="fas fa-home white-text large-text"></i>&nbsp;
+          <button
+            style="font-family: 'Font Awesome 5 Free'; font-weight: 900;"
+            class="icon-button large-text white-text p-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileSidebar"
+            aria-controls="mobileSidebar"
+          >
+            &#xf0c9;
+          </button>
+        </a>
+        <form class="d-flex">
+          <input class="form-control me-2" style="width: 190px" type="search" placeholder="Tìm món ăn" aria-label="Search" />
+          <a class="navbar-brand">
+            <i class="fas fa-map-marker-alt white-text"></i>
+            <i class="fas fa-cart-plus white-text"></i>
+          </a>
+        </form>
+      </div>
+      <div class="container">
+        <nav style="--bs-breadcrumb-divider: '>'; position: relative; top: 5px; height: 15px" aria-label="breadcrumb">
+          <ol class="breadcrumb poppins">
+            <li class="breadcrumb-item small-text">
+              <i class="fas fa-home white-text"></i>&nbsp;
+              <a href="#!" style="color: rgb(31, 164, 253) !important">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item small-text active black-text" aria-current="page">Thực đơn</li>
+          </ol>
+        </nav>
+      </div>
+    </nav>
+    <!-- end: simplified header -->
+
+    <!-- start: sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar" aria-labelledby="mobileSidebarLabel">
+      <div class="offcanvas-header">
+        <a href="#!" class="white-text"
+          ><h5 class="offcanvas-title d-flex align-items-center" id="mobileSidebarLabel">
+            <i class="far fa-user-circle large-text me-3"></i>
+            <div class="d-flex flex-column justify-content-center align-items-start">
+              <h5 class="poppins text-uppercase no-margin">Đăng nhập</h5>
+              <p class="poppins small-text no-margin">Để có trải nghiệm tốt hơn</p>
+            </div>
+            <i class="fas fa-chevron-right large-text" style="position: absolute; right: 16px"></i></h5
+        ></a>
+        <button
+          class="icon-button white-text large-text sidebar-close-btn"
+          type="button"
+          data-bs-dismiss="offcanvas"
+        >
+          <i class="fas fa-times-circle"></i>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="sidebar-menu">
+          <li><a href="#!">Thực đơn</a></li>
+          <li>
+            <a href="#!" class="d-flex justify-content-between align-items-center"><span>Đặt bàn</span> <i class="far fa-calendar-alt large-text"></i></a>
+          </li>
+          <li><a href="#!">Khuyến mãi</a></li>
+          <li><a href="#!">Blogs</a></li>
+          <li><a href="#!">Tham quan nhà hàng</a></li>
+        </ul>
+
+        <h1 class="poppins yellow-text" style="font-size: 48px"><b><i>1900 6333 87</i></b></h1>
+        <p class="poppins-light no-margin"><i class="fas fa-utensils"></i>&nbsp;Restaurant: <b class="poppins">9h-22h</b> T2 - Chủ Nhật</p>
+        <p class="poppins-light no-margin"><i class="fas fa-clock"></i></i>&nbsp;Delivery: <b class="poppins">9h-20h30</b> T2 - Chủ Nhật</p>
+      </div>
+    </div>
+    <!-- start: sidebar -->
+
+    <!-- start: combo detail -->
+    <div class="container-lg mb-3">
+      <div class="container">
+        <div class="row">
+          <!-- start: col 1 -->
+          <div class="col-lg-4">
+            <!-- The expanding image container -->
+            <div class="expanded-container">
+              <!-- Expanded image -->
+              <img id="expandedImg" src="../images/png/restaurant-space.png" style="width: 100%" width="400" height="400" />
+            </div>
+
+            <!-- The grid: four columns -->
+            <div class="row">
+              <div class="column">
+                <img src="../images/png/restaurant-space.png" alt="Nature" onclick="expandImg(this);" width="90" height="90" />
+              </div>
+              <div class="column">
+                <img src="../images/png/magazine.png" alt="Snow" onclick="expandImg(this);" width="90" height="90" />
+              </div>
+              <div class="column">
+                <img src="../images/png/combo-crab.png" alt="Mountains" onclick="expandImg(this);" width="90" height="90" />
+              </div>
+              <div class="column">
+                <img src="../images/png/restaurant-space.png" alt="Lights" onclick="expandImg(this);" width="90" height="90" />
+              </div>
+            </div>
+          </div>
+          <!-- end: col 1 -->
+          <!-- start: col 2 -->
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h1 class="poppins mb-3 text-start"><b>Combo cua thịt nhỏ</b></h1>
+            <div class="d-flex justify-content-between align-items-center">
+              <h1 class="poppins text-primary no-margin text-start">
+                <b>399,000</b>
+              </h1>
+              <div class="d-flex align-items-center justify-content-end">
+                <i class="fab fa-gratipay text-primary large-text me-2"></i>
+                <span class="blue-bg-color white-text round-background">
+                  <i class="fas fa-share-alt medium-text"></i>
+                </span>
+              </div>
+            </div>
+            <p class="poppins-light small-text no-margin">
+              <i>Giá chưa bao gồm 10% VAT</i>
+            </p>
+            <div class="d-flex mt-2">
+              <img src="../images/png/gia-soc-chip.png" alt="gia soc" width="90px" height="30px" class="me-2" />
+              <img src="../images/png/freeship-chip.png" alt="freeship" width="90px" height="30px" />
+            </div>
+            <p class="poppins-light mt-3 medium-text">
+              Gồm 3 con cua thịt Cà Mau chất lượng và 2 món ăn kèm tuỳ chọn<br />
+              (trong 8 món ăn kèm)<br />
+              Thích hợp cho 2-3 người dùng<br />
+              Chế biến xốt độc quyền siêu hấp dẫn
+            </p>
+            <div class="d-flex flex-column justify-content-center align-items-start medium-text">
+              <p class="poppins-light no-margin d-flex align-items-center">
+                <button class="icon-button" data-bs-toggle="modal" data-bs-target="#optionModal" type="button">
+                  <i class="fas fa-plus-circle text-primary"></i>
+                </button>
+                Chọn 1 xốt chế biến
+              </p>
+              <p class="poppins-light no-margin d-flex align-items-center">
+                <button class="icon-button" data-bs-toggle="modal" data-bs-target="#optionModal" type="button">
+                  <i class="fas fa-plus-circle text-primary"></i>
+                </button>
+                Chọn 2 món ăn kèm
+              </p>
+            </div>
+
+            <!-- start: optionModal -->
+            <div class="modal fade" id="optionModal" tabindex="-1" aria-labelledby="optionModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered desktop-width">
+                <div class="modal-content" style="padding: 16px 48px">
+                  <div class="modal-header">
+                    <h3 class="modal-title poppins" id="optionModalLabel"><b>Lựa chọn đi kèm "Combo cua thịt nhỏ"</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bottom-divider">
+                    <h4 class="poppins">Chọn 1 xốt chế biến</h4>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i>
+                            </button>
+                            <span class="poppins medium-text me-2">Xốt me</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Cà ri</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Sa tế</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Tiêu đen</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xào dừa</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt X.O (+55,000)</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Trứng muối (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Bơ tỏi (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Cajun (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Bơ cay (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Cháy tỏi (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Ớt Vua Cua (+55,000)</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Xốt Tiêu xanh (+55,000)</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Rang muối Hong Kong (+55,000)</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class="poppins">Chọn món ăn đi kèm</h4>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Bông cải xanh xào tỏi</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Salad dầu giấm</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Cơm chiên trứng</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Mỳ ý bơ tỏi</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Miến xào</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Rau muống xào X.O</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4">
+                        <ul>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Bắp Mỹ xốt Cajun</span>
+                          </li>
+                          <li class="d-flex align-items-center mb-2">
+                            <button type="button" class="icon-button" onclick="addItem(this)">
+                              <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                            ><span class="poppins medium-text me-2">Khoai tây chiên</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer flex-column align-items-start">
+                    <ul>
+                      <li class="d-flex align-items-center mb-2">
+                        <button type="button" class="icon-button" onclick="addItem(this)">
+                          <i class="fas fa-plus-circle me-4 large-text gray-text"></i></button
+                        ><span class="poppins medium-text me-2">Bánh mì Vua Cua (+10,000)</span>
+                      </li>
+                    </ul>
+                    <div class="row no-margin" style="width: 100%">
+                      <div class="col-md-6 mb-down-md-2" style="padding: 0">
+                        <div class="input-group input-group-lg">
+                          <input
+                            type="text"
+                            class="form-control"
+                            aria-label="Sizing example input"
+                            style="font-family: Arial, 'Font Awesome 5 Free' !important"
+                            aria-describedby="inputGroup-sizing-lg"
+                            placeholder="&#xf044; Thêm ghi chú cho món này"
+                          />
+                        </div>
+                      </div>
+                      <h4 class="poppins text-primary no-margin"><b>399,000đ</b></h4>
+                      <div class="col-md-6 mt-3">
+                        <button class="icon-button add-to-cart-btn" style="width: 100%; height: 100%">
+                            <p class="poppins-light white-text no-margin">Thêm vào giỏ</p>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end: optionModal -->
+
+            <div class="input-group mt-2">
+              <textarea class="form-control" placeholder="Thêm ghi chú cho món ăn này" aria-label="With textarea"></textarea>
+            </div>
+          </div>
+          <!-- end: col 2 -->
+        </div>
+      </div>
+    </div>
+    <!-- end: combo detail -->
+
+    <!-- divider -->
+    <div class="mb-3" style="height: 16px; background-color: #ebebeb; width: 100%"></div>
+    <!-- divider -->
+
+    <div class="container-lg">
+      <h3 class="poppins mb-2">Sản phẩm liên quan</h3>
+      <!-- start: carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <div class="row mt-3">
+                <div class="col-12">
+                  <!-- start: combo -->
+                  <div class="row combo-wrap me-1 d-flex align-items-center item">
+                    <div class="col me-2 img-wrap">
+                      <img style="z-index: -2" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+                    </div>
+                    <div class="col">
+                      <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
+                        <div class="d-lg-flex flex-column align-items-end">
+                          <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                          <p class="poppins-light black-text no-margin">
+                            <del>450,000</del>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
+                      <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
+                      <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
+                      <div class="row mt-2">
+                        <div class="col-6 col-sm-6 d-flex">
+                          <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2" />
+                          <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2" />
+                        </div>
+                        <div class="col-6 col-sm-6 d-flex justify-content-end">
+                          <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                          <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end: combo -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000000">
+            <div class="d-md-block black-text">
+              <div class="row mt-3">
+                <div class="col-12">
+                  <!-- start: combo -->
+                  <div class="row combo-wrap me-1 d-flex align-items-center item">
+                    <div class="col me-2 img-wrap">
+                      <img style="z-index: -2" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+                    </div>
+                    <div class="col">
+                      <div class="d-flex justify-content-between align-items-center flex-wrap">
+                        <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
+                        <div class="d-lg-flex flex-column align-items-end">
+                          <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                          <p class="poppins-light black-text no-margin">
+                            <del>450,000</del>
+                          </p>
+                        </div>
+                      </div>
+                      <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
+                      <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
+                      <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
+                      <div class="row mt-2">
+                        <div class="col-6 col-sm-6 d-flex">
+                          <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2" />
+                          <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2" />
+                        </div>
+                        <div class="col-6 col-sm-6 d-flex justify-content-end">
+                          <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                          <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end: combo -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev text-primary align-items-start" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev" style="left: 270px; top: -35px">
+          <i class="fas fa-chevron-left text-primary large-text" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next align-items-start" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next" style="right: 0px; top: -35px">
+          <i class="fas fa-chevron-right text-primary large-text" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- end: carousel -->
+      <div class="d-flex justify-content-between align-items-center my-3">
+        <button type="button" class="btn btn-outline-info py-1 px-2"><i class="fas fa-store-alt"></i>&nbsp;Tham quan nhà hàng</button>
+        <button type="button" class="btn btn-outline-info py-1 px-2"><i class="fas fa-plus"></i></i>&nbsp;Theo dõi giá</button>
+      </div>
+    </div>
+
+    <!-- divider -->
+    <div class="mb-3" style="height: 16px; background-color: #ebebeb; width: 100%"></div>
+    <!-- divider -->
+
+    <div class="container-lg">
+      <div class="row mb-3">
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+          <img src="../images/png/cam-ket-badge.png" alt="cam ket" width="40px" height="50px" />
+          <p class="green-text poppins text-uppercase no-margin text-center"><b>Cam kết</b></p>
+          <p class="poppins small-text no-margin text-center text-uppercase">
+            Nguồn gốc xuất xứ rõ ràng
+          </p>
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+          <img src="../images/png/bao-doi-tra.png" alt="cam ket" width="40px" height="40px" />
+          <p class="yellow-text poppins text-uppercase no-margin text-center"><b>Đảm bảo</b></p>
+          <p class="poppins small-text no-margin text-uppercase text-center">
+            An toàn Vệ sinh thực phẩm
+          </p>
+        </div>
+        <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+          <img src="../images/png/giao-nhanh.png" alt="cam ket" width="40px" height="40px" />
+          <p class="text-primary poppins text-uppercase no-margin text-center"><b>Miễn phí</b></p>
+          <p class="poppins small-text no-margin text-center text-uppercase">
+            Giao hàng <br/> hoá đơn từ 300k
+          </p>
+        </div>
+      </div>
+      <div class="scrollmenu">
+        <a class="poppins" href="#!">Thông tin chi tiết</a>
+        <a class="poppins" href="#!">Nhận xét, đánh giá</a>
+        <a class="poppins" href="#!">Hình ảnh khách hàng</a>
+      </div>
+      <div class="mt-3 text-justify">
+        <p>
+          Cua Cà Mau là một trong những loại hải sản rất bổ dưỡng, chứa hàm lượng dinh dưỡng cao như đạm, canxi, các loại vitamin, đặc
+          biệt tốt cho sức khoẻ của trẻ nhỏ, phụ nữ mang thai, người già yếu.
+          <br />
+          Với 15 loại xốt được chế biến theo công thức độc quyền, Vua Cua luôn tạo ra những món ngon với hương vị không lẫn với bất kì
+          nơi nào, mỗi một loại xốt sẽ đem đến một trải nghiệm mới thú vị, không loại xốt nào giống loại xốt nào. Vị béo thơm từ trứng
+          muối khác với vị béo thơm từ xốt bơ cay, lại càng không giống với bơ tỏi,... Đặc biệt, đối với cua Cà Mau, dường như khi kết
+          hợp với bất kì loại xốt nào thì nó cũng trở thành món cua ngon đúng điệu
+        </p>
+        <p>
+          Cua Cà Mau tại Vua Cua là là cua được thu mua từ chính gốc Cà Mau, cua đặc biệt chắc và ngọt thịt hơn cua ở các vùng khác.<br />Đặt
+          biệt, bao đổi trả nếu quý khách gặp vấn đề về chất lượng cua.
+        </p>
+        <p>Cua Cà Mau đặc biệt ngon nhất khi kết hợp với các loại xốt độc quyền tại Vua Cua</p>
+        <p>
+          1. Hâm nóng bằng lò vi sóng:
+          <br />- Mở hộp <br />- Mở lớp giấy bạc và cho thức ăn vào hộp giấy (Bỏ lớp giấy bạc đi) <br />- Đóng hộp giấy đựng thức ăn lại
+          <br />- Cho hộp vào lò vi sóng và hâm nóng ở nhiệt độ 180 độ C trong vòng 2-4 phút <br />- Mở hộp ra và thưởng thức
+        </p>
+        <p>
+          2. Hâm nóng bằng cách hấp cách thuỷ:
+          <br />- Chuẩn bị sẵn 200ml nước trong nồi <br />- Đặt hộp thức ăn vào nồi với 1 cái tô/chén bên dưới để tránh hộp tiếp xúc với
+          nước bên dưới <br />- Đậy nắp và đun trong 10-15 phút (tính từ lúc nước sôi) <br />- Lấy ra và thưởng thức
+        </p>
+      </div>
+        <h3 class="poppins mb-2">Sản phẩm vừa xem</h3>
+        <!-- start: carousel -->
+        <div id="historyDishes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000000">
+              <div class="d-md-block black-text">
+                <div class="row mt-3">
+                  <div class="col-12">
+                    <!-- start: combo -->
+                    <div class="row combo-wrap me-1 d-flex align-items-center item">
+                      <div class="col me-2 img-wrap">
+                        <img style="z-index: -2" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+                      </div>
+                      <div class="col">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                          <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
+                          <div class="d-lg-flex flex-column align-items-end">
+                            <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                            <p class="poppins-light black-text no-margin">
+                              <del>450,000</del>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
+                        <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
+                        <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
+                        <div class="row mt-2">
+                          <div class="col-6 col-sm-6 d-flex">
+                            <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2" />
+                            <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2" />
+                          </div>
+                          <div class="col-6 col-sm-6 d-flex justify-content-end">
+                            <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                            <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end: combo -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="1000000">
+              <div class="d-md-block black-text">
+                <div class="row mt-3">
+                  <div class="col-12">
+                    <!-- start: combo -->
+                    <div class="row combo-wrap me-1 d-flex align-items-center item">
+                      <div class="col me-2 img-wrap">
+                        <img style="z-index: -2" src="../images/png/combo-crab.png" alt="combo crap" width="150px" height="150px" />
+                      </div>
+                      <div class="col">
+                        <div class="d-flex justify-content-between align-items-center flex-wrap">
+                          <h5 class="poppins"><b>Combo cua thịt nhỏ</b></h5>
+                          <div class="d-lg-flex flex-column align-items-end">
+                            <h4 class="poppins text-primary no-margin"><b>390,000</b></h4>
+                            <p class="poppins-light black-text no-margin">
+                              <del>450,000</del>
+                            </p>
+                          </div>
+                        </div>
+                        <p class="poppins-light no-margin text-justify">Gồm 3 con cua thịt Cà Mau và 2 món ăn kèm tuỳ chọn (trong 8 món ăn kèm)</p>
+                        <p class="poppins-light no-margin text-justify">Thích hợp cho 2-3 người dùng</p>
+                        <p class="poppins-light no-margin text-justify">Giá chưa bao gồm 10% VAT</p>
+                        <div class="row mt-2">
+                          <div class="col-6 col-sm-6 d-flex">
+                            <img src="../images/png/gia-soc-chip.png" class="me-2" width="100px" height="30" style="z-index: -2" />
+                            <img src="../images/png/freeship-chip.png" width="100px" height="30" style="z-index: -2" />
+                          </div>
+                          <div class="col-6 col-sm-6 d-flex justify-content-end">
+                            <button class="icon-button add-to-cart"><i class="fas fa-plus-circle text-primary me-2 large-text"></i></button>
+                            <button class="icon-button"><i class="fas fa-info-circle large-text" style="color: #018045"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- end: combo -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev text-primary align-items-start" type="button" data-bs-target="#historyDishes" data-bs-slide="prev" style="left: 270px; top: -35px">
+            <i class="fas fa-chevron-left text-primary large-text" aria-hidden="true"></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next align-items-start" type="button" data-bs-target="#historyDishes" data-bs-slide="next" style="right: 0px; top: -35px">
+            <i class="fas fa-chevron-right text-primary large-text" aria-hidden="true"></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- end: carousel -->
+        <div class="d-flex justify-content-between align-items-center my-3">
+          <button type="button" class="btn btn-outline-info py-1 px-2"><i class="fas fa-store-alt"></i>&nbsp;Tham quan nhà hàng</button>
+          <button type="button" class="btn btn-outline-info py-1 px-2"><i class="fas fa-plus"></i></i>&nbsp;Theo dõi giá</button>
+        </div>
+    </div>
+
+    <div class="place-order sticky-bottom d-flex flex-column justify-content-center align-items-center w-100 py-2">
+      <button type="button" class="btn btn-outline-primary order-btn my-2 text-primary" style="width: 270px">
+        <p class="text-uppercase no-margin"><b>Đặt mua</b></p>
+      </button>
+      <p class="poppins-light no-margin text-center medium-text">
+        <b
+          ><i>Bạn đang đói?<br/> Nhanh hơn nữa gọi ngay&nbsp;<span class="text-primary">1900 6333 87</span></i></b
+        >
+      </p>
+    </div>
+
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
