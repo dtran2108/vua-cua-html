@@ -57,6 +57,10 @@
   color: #fff;
 }
 
+.sidebar-menu {
+  list-style-type: none;
+}
+
 .sidebar-close-btn {
   position: absolute;
 }
