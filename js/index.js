@@ -75,6 +75,14 @@ function removeItem(item) {
   item.parentElement.querySelector('#removeBtn').remove();
 }
 
+function checkBackupPerson(checkbox) {
+  if (checkbox.checked) {
+    document.getElementById('backupPersonInfo').style.display = 'block';
+  } else {
+    document.getElementById('backupPersonInfo').style.display = 'none';
+  }
+}
+
 function createRemoveBtn() {
   let button = document.createElement('button');
   button.setAttribute('class', 'icon-button');

@@ -379,12 +379,12 @@ ul {
 }
 
 #paymentModal {
-  position: absolute;
-  top: 180vh;
+  position: fixed;
+  top: 40vh;
   width: 300px;
   max-width: 300px;
   left: calc(60vw - 300px);
-  opacity: 0;
+  visibility: hidden;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;

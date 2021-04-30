@@ -145,28 +145,30 @@
               <!-- start: thong tin nguoi nhan hang ho -->
               <div class="card-body pb-3">
                 <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="otherPersonCheck" />
+                  <input onchange="checkBackupPerson(this)" class="form-check-input" type="checkbox" id="backupPersonCheck" />
                   <label class="form-check-label poppins yellow-text" for="flexCheckDefault"> Gọi người khác nhận hàng (nếu có) </label>
                 </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-                  <label class="form-check-label" for="inlineRadio1">Anh</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                  <label class="form-check-label" for="inlineRadio2">Chị</label>
-                </div>
-                <div class="input-group my-3">
-                  <input type="text" class="form-control" placeholder="Họ và tên*" aria-label="Username" aria-describedby="basic-addon1" />
-                </div>
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Số điện thoại*"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
-                  />
+                <div id="backupPersonInfo" style="display: none">
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
+                    <label class="form-check-label" for="inlineRadio1">Anh</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
+                    <label class="form-check-label" for="inlineRadio2">Chị</label>
+                  </div>
+                  <div class="input-group my-3">
+                    <input type="text" class="form-control" placeholder="Họ và tên*" aria-label="Username" aria-describedby="basic-addon1" />
+                  </div>
+                  <div class="input-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Số điện thoại*"
+                      aria-label="Username"
+                      aria-describedby="basic-addon1"
+                    />
+                <div>
                 </div>
               </div>
               <!-- end: thong tin nguoi nhan hang ho -->
@@ -229,20 +231,10 @@
                 <!-- start: select -->
                 <div class="row gx-5 mb-3">
                   <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected class="poppins gray-text">Ngày nhận</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                    <input type="text" onfocus="(this.type='date')" class="form-control" placeholder="Ngày nhận">
                   </div>
                   <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                      <option selected class="poppins gray-text">Thời gian nhận</option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
+                    <input type="text" onfocus="(this.type='time')" class="form-control" placeholder="Thời gian nhận">
                   </div>
                 </div>
                 <!-- end: select -->
@@ -385,7 +377,8 @@
     <!-- End: Footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../jquery/index.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../jquery/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
