@@ -10,6 +10,8 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.css" />
     <link rel="stylesheet" href="../fontawesome-free-5.15.3-web/font-awesome-css/all.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
@@ -664,7 +666,7 @@
     <!-- Start: He thong vua cua -->
     <div class="container-lg mt-5 pb-3 text-center border-bot">
       <h1 class="aachenb text-primary no-margin upper-text">Hệ thống vua cua</h1>
-      <div class="row mt-2">
+      <div class="row mt-2 chain-slick">
         <!-- start: chain1 -->
         <div class="col mx-2 my-5 chain active" onclick="setActiveChain(this)">
           <center>
@@ -1095,10 +1097,15 @@
         <center class="mt-5">
           <div class="row">
             <div class="col-lg-8">
-              <video width="100%" height="465" controls autoplay>
-                <source src="../video/yoursmile.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                width="100%"
+                height="465"
+                src="https://www.youtube.com/embed/xypzmu5mMPY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="col-lg-4 text-start">
               <div class="row mb-2">
@@ -1329,8 +1336,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="../js/index.js"></script>
-    <script type="text/javascript" src="../jquery/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
       integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
@@ -1341,5 +1346,8 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../jquery/index.js"></script>
   </body>
 </html>
