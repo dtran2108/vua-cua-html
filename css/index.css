@@ -429,6 +429,34 @@ textarea {
   right: 0px;
 }
 
+#countdown {
+  font-family: "Poppins Medium";
+  text-transform: uppercase;
+  width: 7rem;
+  border: 1px solid transparent;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 8px 0;
+  margin: 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #countdown {
+    width: 5rem!important;
+    font-size: 8px;
+  }
+}
+
+#countdown span {
+  font-weight: bold; /*boldens text in the span element*/
+  font-size: 30px; /*changes the text size in the span element*/
+}
+
 @keyframes shakeCart {
   25% {
     transform: translateX(6px);
