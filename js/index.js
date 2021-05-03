@@ -75,6 +75,14 @@ function removeItem(item) {
   item.parentElement.querySelector('#removeBtn').remove();
 }
 
+function checkBackupPerson(checkbox) {
+  if (checkbox.checked) {
+    document.getElementById('backupPersonInfo').style.display = 'block';
+  } else {
+    document.getElementById('backupPersonInfo').style.display = 'none';
+  }
+}
+
 function createRemoveBtn() {
   let button = document.createElement('button');
   button.setAttribute('class', 'icon-button');
@@ -262,3 +270,63 @@ function setCouponLoading(currentCategory) {
   processScroll();
   addEventListener('scroll', processScroll);
 })(this);
+
+// for countdown timer
+let today = new Date();
+let dueDate = new Date(2021, 4, 15, 8, 0, 0, 0);
+let remainingTime = new Date(dueDate.getTime() - today.getTime());
+let days = remainingTime.getDate(); // starting number of days
+let hours = remainingTime.getHours(); // starting number of hours
+let minutes = remainingTime.getMinutes(); // starting number of minutes
+let seconds = remainingTime.getSeconds(); // starting number of seconds
+
+// converts all to seconds
+let totalSeconds = Math.round(remainingTime / 1000);
+
+//temporary seconds holder
+let tempSeconds = totalSeconds;
+
+// calculates number of days, hours, minutes and seconds from a given number of seconds
+const convert = (value, inSeconds) => {
+  if (value > inSeconds) {
+    let x = value % inSeconds;
+    tempSeconds = x;
+    return Math.round((value - x) / inSeconds);
+  } else {
+    return 0;
+  }
+};
+
+//sets seconds
+const setSeconds = (s) => {
+  document.querySelector('#seconds').textContent = s;
+};
+
+//sets minutes
+const setMinutes = (m) => {
+  document.querySelector('#minutes').textContent = m;
+};
+
+//sets hours
+const setHours = (h) => {
+  document.querySelector('#hours').textContent = h;
+};
+
+//sets Days
+const setDays = (d) => {
+  document.querySelector('#days').textContent = d;
+};
+
+// Update the count down every 1 second
+var x = setInterval(() => {
+  //clears countdown when all seconds are counted
+  if (totalSeconds <= 0) {
+    clearInterval(x);
+  }
+  setDays(convert(tempSeconds, 24 * 60 * 60));
+  setHours(convert(tempSeconds, 60 * 60));
+  setMinutes(convert(tempSeconds, 60));
+  setSeconds(tempSeconds == 60 ? 59 : tempSeconds);
+  totalSeconds--;
+  tempSeconds = totalSeconds;
+}, 1000);

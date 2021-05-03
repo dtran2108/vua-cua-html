@@ -108,8 +108,8 @@
                     </div>
                     <p class="poppins-light mt-1 mb-0">Xốt tiêu đen, Salad dầu giấm x 1, Cơm chiên trứng x 1</p>
                     <p class="poppins-light no-margin"><i>Ghi chú: không bỏ hành vào cơm</i></p>
-                    <div class="d-flex mt-2 align-items-center">
-                      <ul class="list-group list-group-horizontal me-4">
+                    <div class="d-flex mt-2 align-items-center flex-wrap">
+                      <ul class="list-group list-group-horizontal my-2">
                         <li class="list-group-item no-border-right">
                           <button class="icon-button gray-text"><i class="fas fa-minus-circle"></i></button>
                         </li>
@@ -130,21 +130,25 @@
           <div class="row d-flex justify-content-center">
             <div class="col-11">
               <div class="card-body pb-3 d-flex flex-column align-items-end">
-                <table class="table-width">
+                <table class="w-100">
+                  <colgroup>
+                    <col style="width: 35%" />
+                    <col style="width: 65%" />
+                  </colgroup>
                   <tr>
-                    <td class="poppins-light text-end">Tiền hàng:</td>
+                    <td class="poppins-light text-end medium-text">Tiền hàng:</td>
                     <td class="large-text text-primary poppins text-end"><b>399,000</b></td>
                   </tr>
                   <tr>
-                    <td class="poppins-light text-end">VAT:</td>
+                    <td class="poppins-light text-end medium-text">VAT:</td>
                     <td class="medium-text poppins text-end">39.900</td>
                   </tr>
                   <tr>
-                    <td class="poppins-light text-end">Phí giao hàng dự kiến:</td>
+                    <td class="poppins-light text-end medium-text">Phí giao hàng dự kiến:</td>
                     <td class="medium-text poppins text-end">20.000</td>
                   </tr>
                   <tr>
-                    <td class="poppins-light text-end">Tổng tiền:</td>
+                    <td class="poppins-light text-end medium-text">Tổng tiền:</td>
                     <td class="large-text poppins text-end text-primary"><b>458,900</b></td>
                   </tr>
                 </table>
@@ -159,11 +163,7 @@
           <div class="row d-flex justify-content-center">
             <div class="col-11">
               <div class="card-body pb-3 d-flex flex-column align-items-center">
-                <div class="row d-flex justify-content-center">
-                  <button type="button" class="btn btn-danger btn-lg text-uppercase poppins large-text" style="width: 300px">
-                    đặt hàng
-                  </button>
-                </div>
+                <button type="button" class="btn btn-danger btn-lg text-uppercase poppins large-text" style="width: 100%">đặt hàng</button>
                 <button class="icon-button"><p class="poppins gray-text mt-3">Xoá giỏ hàng</p></button>
               </div>
             </div>
@@ -175,9 +175,9 @@
         <!-- start: uu dai cho ban -->
         <div class="card mt-4" style="border-bottom: none">
           <div class="card-body d-flex flex-column justify-content-center align-items-center">
-            <h3 class="poppins text-primary mt-4">
-              <img src="../images/svg/giftbox.svg" width="35px" height="35px" /> &nbsp;&nbsp; Ưu đãi đặc biệt dành cho bạn
-            </h3>
+            <h5 class="poppins text-primary mt-4 text-center">
+              <img src="../images/svg/giftbox.svg" width="35px" height="35px" /> &nbsp; Ưu đãi đặc biệt dành cho bạn
+            </h5>
             <p class="poppins"><i>Hoá đơn trên 50.000đ được mua sản phẩm giá sốc</i></p>
           </div>
         </div>
@@ -429,82 +429,6 @@
         <!-- end: carousel -->
       </div>
     </div>
-
-    <!-- Start: Dang ky khuyen mai -->
-    <div class="py-5 secondary-bg-color">
-      <div class="row d-flex justify-content-center">
-        <center class="col-md-2"><img src="../images/png/full-logo.png" alt="full logo" width="200px" height="220px" /></center>
-        <div class="col-md-5 red-divider d-flex flex-column justify-content-center align-items-center">
-          <h5 class="poppins text-primary no-margin text-center pb-3">Để lại địa chỉ email<br />để đăng ký nhận khuyến mãi nhé!</h5>
-          <center>
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control cus-input"
-                placeholder="Nhập địa chỉ email của bạn"
-                aria-label="email"
-                aria-describedby="basic-addon2"
-                style="width: 350px"
-              />
-              <span id="basic-addon2"><button class="register-btn">Đăng ký</button></span>
-            </div>
-          </center>
-        </div>
-        <div class="col-md-4 mt-md-0 mt-2 d-flex flex-column justify-content-center align-items-center">
-          <center>
-            <h5 class="poppins no-margin"><b>Vua Cua đang ở rất gần bạn đấy!</b></h5>
-          </center>
-          <center class="my-3">
-            <div class="d-flex justify-content-between align-items-center" style="width: 250px">
-              <img src="../images/png/facebook.png" alt="facebook" width="70px" />
-              <img src="../images/png/insta.png" alt="instagram" width="70px" />
-              <img src="../images/png/youtube.png" alt="youtube" width="70px" />
-            </div>
-          </center>
-          <center>
-            <h5 class="poppins text-primary">Hãy kết nối & sẻ chia với chúng tôi nhé!</h5>
-          </center>
-        </div>
-      </div>
-    </div>
-    <!-- End: Dang ky khuyen mai -->
-
-    <!-- Start: Footer -->
-    <footer class="py-5 primary-bg-color">
-      <div class="container-lg">
-        <div class="row">
-          <ul class="col-md-3 white-text">
-            <li><h4 class="aachenb white-text text-uppercase">Nhà hàng vua cua</h4></li>
-            <li><p class="poppins-light small-text no-margin">Công ty cổ phần thương mại dịch vụ Vua Cua</p></li>
-            <li><p class="poppins-light small-text no-margin">14 Phan Tôn, phường Đakao, quận 1</p></li>
-            <li><p class="poppins-light small-text no-margin">ĐT: 0283 6203862. Email: cskh@vuacua.vn </p></li>
-          </ul>
-          <ul class="col-md-3 white-text">
-            <li><p class="poppins-light small-text no-margin">Về Vua Cua</p></li>
-            <li><p class="poppins-light small-text no-margin">Chính sách và quy định chung</p></li>
-            <li><p class="poppins-light small-text no-margin">Hướng dẫn đặt hàng</p></li>
-            <li><p class="poppins-light small-text no-margin">Giao hàng - Thanh toán</p></li>
-            <li><p class="poppins-light small-text no-margin">Khiếu nại & giải quyết khiếu nại</p></li>
-            <li><p class="poppins-light small-text no-margin">Bảo mật</p></li>
-          </ul>
-          <div class="col-md-3 my-3 mx-0">
-            <img src="../images/png/bocongthuong.png" alt="bo cong thuong" />
-          </div>
-          <ul class="col-md-3 white-text">
-            <li>
-              <div class="d-flex justify-content-start align-items-center mb-3">
-                <img src="../images/png/white-phone.png" alt="white phone" style="position: 'relative'; bottom: 8" />
-                <h3 class="aachenb white-text no-margin">1900 6333 87</h3>
-              </div>
-            </li>
-            <li><p class="poppins-light small-text no-margin">Giờ hoạt động</p></li>
-            <li><p class="poppins-light small-text no-margin">Nhà hàng: 10:00 - 23:00 (T2 - Chủ Nhật)</p></li>
-            <li><p class="poppins-light small-text no-margin">Giao hàng tận nơi: 10:00 - 21:30 (T2 - Chủ Nhật)</p></li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-    <!-- End: Footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../jquery/index.js"></script>

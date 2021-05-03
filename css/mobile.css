@@ -39,10 +39,6 @@
   -o-border-radius: 99px;
 }
 
-#simplifiedHeader {
-  position: sticky;
-}
-
 .d-none-mobile {
   display: none !important;
 }

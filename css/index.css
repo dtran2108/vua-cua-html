@@ -36,7 +36,7 @@
 /* end: import */
 
 /* start: media */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   .d-none-desktop {
     display: none !important;
   }
@@ -186,6 +186,10 @@
   z-index: 101;
 }
 
+.table-width {
+  width: 500px
+}
+
 .is-hidden {
   opacity: 0;
   transition: all 0.3s;
@@ -212,6 +216,18 @@
   -moz-transform: translate(0, 0);
   -ms-transform: translate(0, 0);
   -o-transform: translate(0, 0);
+}
+
+.slick-prev:before, .slick-next:before {
+  color: var(--primary-color)
+}
+
+.slick-prev {
+  left: 8px;
+}
+
+.slick-next {
+  right: 8px;
 }
 
 .learn-more-btn {
@@ -367,12 +383,12 @@ ul {
 }
 
 #paymentModal {
-  position: absolute;
-  top: 180vh;
+  position: fixed;
+  top: 40vh;
   width: 300px;
   max-width: 300px;
   left: calc(60vw - 300px);
-  opacity: 0;
+  visibility: hidden;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -415,6 +431,34 @@ textarea {
   border-radius: 24px;
   top: -8px;
   right: 0px;
+}
+
+#countdown {
+  font-family: "Poppins Medium";
+  text-transform: uppercase;
+  width: 7rem;
+  border: 1px solid transparent;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 10px;
+  padding: 8px 0;
+  margin: 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #countdown {
+    width: 5rem!important;
+    font-size: 8px;
+  }
+}
+
+#countdown span {
+  font-weight: bold; /*boldens text in the span element*/
+  font-size: 30px; /*changes the text size in the span element*/
 }
 
 @keyframes shakeCart {
